@@ -1,0 +1,12 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Derivative :=  Error - DelayLine[0];&#xD;
+&#xD;
+Integral := 0;&#xD;
+&#xD;
+FOR i:=0 TO Ti DO&#xD;
+	Integral := Integral + DelayLine[i];&#xD;
+END_FOR;&#xD;
+&#xD;
+Integral := Integral/Ti;&#xD;
+&#xD;
+Output :=  Error * Kp + Derivative * Kd + Integral * Ki;&#xD;
+</Text></StructuredTextModel>

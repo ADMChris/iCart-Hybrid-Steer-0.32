@@ -1,0 +1,49 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=UnknownTag	G=VAR
+++D=WORD	N=TagHighWord	G=VAR
+++D=WORD	N=TagLowWord	G=VAR
+++D=WordBitUnion	N=StatusWord	G=VAR
+++D=BOOL	N=Reader_ReadOK	G=VAR
+++D=BOOL	N=PrevReadOK	G=VAR
+++D=BOOL	N=Reader_WriteOK	G=VAR
+++D=BOOL	N=Reader_Active	G=VAR
+++D=INT	N=Reader_DataLength	G=VAR
+++D=WORD	N=PrevTagHigh	G=VAR
+++D=WORD	N=PrevTagLow	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..1] OF BYTE	N=TagBytesHigh	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=TagBytesLow	G=VAR_EXTERNAL
+++D=ARRAY[0..3] OF BYTE	N=TagData	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
+++D=Directions	N=AGVDirection	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=RFIDInWord	G=VAR_EXTERNAL
+++D=WordBitUnion	N=Scanfield	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestBeep	G=VAR_EXTERNAL
+++D=REAL	N=TagSpeed	G=VAR_EXTERNAL
+++D=Speeds	N=TagRequestedSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=LowPriority	G=VAR_EXTERNAL
+++D=ToSupervisorDT	N=ToSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=RequestStopAGV	G=VAR_EXTERNAL
+++D=BOOL	N=Reader_Error	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=RFIDOutWord	G=VAR_EXTERNAL
+++D=WORD	N=CurrentTagHighWord	G=VAR_EXTERNAL
+++D=WORD	N=CurrentTagLowWord	G=VAR_EXTERNAL
+++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
+++D=WORD	N=LastTagLowWord	G=VAR_EXTERNAL
+++D=BOOL	N=InstantStop	G=VAR_EXTERNAL
+++D=RequestResponse	N=LoadFromLeft	G=VAR_EXTERNAL
+++D=RequestResponse	N=LoadFromRight	G=VAR_EXTERNAL
+++D=RequestResponse	N=UnloadToLeft	G=VAR_EXTERNAL
+++D=RequestResponse	N=UnloadToRight	G=VAR_EXTERNAL
+++D=BOOL	N=BoxPresent	G=VAR_EXTERNAL
+++D=Parameters	N=Param	G=VAR_EXTERNAL
+++D=BOOL	N=NewTagRead	G=VAR_EXTERNAL
+++D=StoredSpeeds	N=StoredSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestWait	G=VAR_EXTERNAL
+++D=TIME	N=TagWaitTime	G=VAR_EXTERNAL
+++D=BOOL	N=WaitAutoStart	G=VAR_EXTERNAL
+++D=DATE_AND_TIME	N=WaitUntil	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestDriveInit	G=VAR_EXTERNAL

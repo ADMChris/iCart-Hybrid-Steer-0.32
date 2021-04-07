@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=CommStates	N=CommState	G=VAR
+++D=ToSupervisorDT	N=PrevToSupervisor	G=VAR
+++D=CIPUCMMWrite	N=WriteFB	G=VAR
+++D=DATE_AND_TIME	N=LastComms	G=VAR
+++D=INT	N=PrevSIDIn	G=VAR
+++D=LINT	N=LastUpdSec	G=VAR
+++D=LINT	N=CurrentSec	G=VAR
+++D=ARRAY[0..0] OF ToSupervisorDT	N=ToSupArray	G=VAR
+++D=BOOL	N=CSWrite	G=VAR
+++D=BOOL	N=CSDone	G=VAR
+++D=BOOL	N=CSBusy	G=VAR
+++D=BOOL	N=CSError	G=VAR
+++D=WORD	N=CSErrorID	G=VAR
+++D=DWORD	N=CSErrorIDEX	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ToSupervisorDT	N=ToSupervisor	G=VAR_EXTERNAL
+++D=FromSupervisorDT	N=FromSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorOK	G=VAR_EXTERNAL
+++D=STRING[18]	N=SupervisorIP	G=VAR_EXTERNAL
+++D=BOOL	N=CameraCommsFault	G=VAR_EXTERNAL
+++D=WORD	N=HMICartNumber	G=VAR_EXTERNAL

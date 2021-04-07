@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2237955" Revision="16777216" IONodeID="1874514a-175c-4198-927a-9bc1b8ab6f6c" DeviceName="N4" SerialNo="0" IsEnabled="1">
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="20496" SubIndex="1" Value="True" />
+  <Parameter Index="20496" SubIndex="2" Value="True" />
+  <Parameter Index="20497" SubIndex="1" Value="2" />
+  <Parameter Index="20497" SubIndex="2" Value="2" />
+  <Parameter Index="20498" SubIndex="1" Value="4" />
+  <Parameter Index="20498" SubIndex="2" Value="0" />
+  <Parameter Index="20498" SubIndex="3" Value="4" />
+  <Parameter Index="20498" SubIndex="4" Value="0" />
+  <IOPort IOPortID="b2149747-21dc-4779-a6eb-8c2611338c28" Index="28672" SubIndex="1" />
+  <IOPort IOPortID="9d91d6c3-9b54-4c1a-9099-7acea60ce999" Index="28672" SubIndex="2" />
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="b2149747-21dc-4779-a6eb-8c2611338c28" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="9d91d6c3-9b54-4c1a-9099-7acea60ce999" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

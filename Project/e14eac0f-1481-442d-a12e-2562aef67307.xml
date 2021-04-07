@@ -1,0 +1,95 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=SendStatusWordToSupervisor	G=VAR
+++D=CIPUCMMSend	N=SupervisorStatusOut_FB	G=VAR
+++D=BOOL	N=SupervisorStatusSendDone	G=VAR
+++D=CIPOpen	N=SupervisorConnect_FB	G=VAR
+++D=BOOL	N=SupervisorConnectBusy	G=VAR
+++D=BOOL	N=SupervisorConnectError	G=VAR
+++D=WORD	N=SupervisorConnectErrorID	G=VAR
+++D=DWORD	N=SupervisorConnectErrorIDEx	G=VAR
+++D=_sCIP_HANDLE	N=SupervisorHandle	G=VAR
+++D=ToMasterDT	N=PrevToMaster	G=VAR
+++D=FromMasterDT	N=PrevFromMaster	G=VAR
+++D=CIPUCMMWrite	N=ToMasterFB	G=VAR
+++D=STRING[21]	N=RequestTrolleyRoutePath	G=VAR
+++D=UINT	N=RequestTrolleyTimeOut	G=VAR
+++D=STRING[24]	N=RequestTrolleyDestDat	G=VAR
+++D=UINT	N=RequestUnloadSrcDat	G=VAR
+++D=STRING[32]	N=MasterRoutePath	G=VAR
+++D=UINT	N=MasterTimeOut	G=VAR
+++D=STRING[32]	N=MasterDestDat	G=VAR
+++D=BOOL	N=ToMasterWriteBusy	G=VAR
+++D=BOOL	N=ToMasterWriteError	G=VAR
+++D=WORD	N=ToMasterWriteErrorID	G=VAR
+++D=BOOL	N=ToMasterDiff	G=VAR
+++D=DWORD	N=TempSrcDat	G=VAR
+++D=UINT	N=TempSrcInt	G=VAR
+++D=WordBitUnion	N=ControlWord	G=VAR
+++D=BOOL	N=SupervisorEnabled	G=VAR
+++D=WORD	N=RemoteNextStation	G=VAR
+++D=WORD	N=RemoteSlowSpeed	G=VAR
+++D=WORD	N=RemoteMediumSpeed	G=VAR
+++D=WORD	N=RemoteFastSpeed	G=VAR
+++D=WORD	N=TempStatusWord	G=VAR
+++D=WORD	N=TempControlWord	G=VAR
+++D=BOOL	N=BatteryLow	G=VAR
+++D=BOOL	N=UVLO	G=VAR	Com=Undervoltage Lockout
+++D=BOOL	N=Off	G=VAR
+++D=BOOL	N=EStopMemoryFlag	G=VAR
+++D=BOOL	N=OkToStart	G=VAR
+++D=BOOL	N=Fault	G=VAR	Com=Fault Master
+++D=WordBitUnion	N=StatusWord	G=VAR	EC=<ECs><EC EK="Bit[1]" C="STOP" /><EC EK="Bit[2]" C="Run" /><EC EK="Bit[4]" C="Scan Warn High" /><EC EK="Bit[6]" C="Wait Auto Start" /><EC EK="Bit[7]" C="Wait Man Start" /><EC EK="Bit[9]" C="Global Stop" /><EC EK="Bit[11]" C="Fuse Blown" /><EC EK="Bit[12]" C="Scan Red Zone" /><EC EK="Bit[13]" C="Scan Stop Zone" /><EC EK="Bit[14]" C="Estop" /></ECs>
+++D=BOOL	N=DrivePowerOn	G=VAR
+++D=INT	N=HMISerialNumber	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=UINT	N=CommandFromSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=TrolleyInEscapement	G=VAR_EXTERNAL
+++D=FromMasterDT	N=FromMaster	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorRequestUnload	G=VAR_EXTERNAL
+++D=ToMasterDT	N=ToMaster	G=VAR_EXTERNAL
+++D=BOOL	N=AllowCartMove	G=VAR_EXTERNAL
+++D=BOOL	N=PauseAGV	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorUnloadBusy	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorUnloadDone	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=UINT	N=RequestTrolleySrcDat	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteStart	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteStopAGV	G=VAR_EXTERNAL
+++D=Directions	N=AGVDirection	G=VAR_EXTERNAL
+++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
+++D=BOOL	N=ZoneInhibit	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteLockout	G=VAR_EXTERNAL
+++D=BOOL	N=GlobalStop	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorOK	G=VAR_EXTERNAL
+++D=ToSupervisorDT	N=ToSupervisor	G=VAR_EXTERNAL
+++D=StoredSpeeds	N=StoredSpeed	G=VAR_EXTERNAL
+++D=Array[0..98] OF WORD	N=CJ2OutData	G=VAR_EXTERNAL	EC=<ECs><EC EK="[4]" C="Status Word" /></ECs>
+++D=REAL	N=Speed	G=VAR_EXTERNAL
+++D=WORD	N=CurrentTagHighWord	G=VAR_EXTERNAL
+++D=WORD	N=CurrentTagLowWord	G=VAR_EXTERNAL
+++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
+++D=WORD	N=LastTagLowWord	G=VAR_EXTERNAL
+++D=INT	N=BatteryVoltage	G=VAR_EXTERNAL
+++D=WORD	N=HMIMessage	G=VAR_EXTERNAL
+++D=BOOL	N=ScanRedZone	G=VAR_EXTERNAL
+++D=BOOL	N=ScanWarnHigh	G=VAR_EXTERNAL
+++D=BOOL	N=ScanWarnLow	G=VAR_EXTERNAL
+++D=BOOL	N=AGVStarted	G=VAR_EXTERNAL
+++D=BOOL	N=Reader_Error	G=VAR_EXTERNAL
+++D=OM_Drive	N=Drive1Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="InCmd.Bit[3]" C="Forward" /><EC EK="InCmd.Bit[4]" C="Reverse" /><EC EK="InCmd.Bit[5]" C="Decel Stop" /><EC EK="CommsFault" C="'" /><EC EK="OutCmd.Bit[7]" C="Alarm out" /></ECs>
+++D=OM_Drive	N=Drive2Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="InCmd.Bit[3]" C="Forward" /><EC EK="InCmd.Bit[4]" C="Reverse" /><EC EK="InCmd.Bit[5]" C="Decel Stop" /><EC EK="OutCmd.Bit[7]" C="Alarm Out" /><EC EK="OutCmd.Bit[6]" C="Warning" /><EC EK="OutCmd.Bit[3]" C="Forward Cmd" /><EC EK="OutCmd.Bit[4]" C="Reverse Cmd" /><EC EK="InCmd.Bit[1]" C="M1" /><EC EK="InCmd.Bit[0]" C="M0" /></ECs>
+++D=BOOL	N=EStopEngaged	G=VAR_EXTERNAL
+++D=BOOL	N=TrackLost	G=VAR_EXTERNAL
+++D=BOOL	N=TrackLostDebounced	G=VAR_EXTERNAL
+++D=Array[0..98] OF WORD	N=CJ2InData	G=VAR_EXTERNAL
+++D=BOOL	N=_EIP1_TDLinkAllRunSta	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=RFIDIOLinkOK	G=VAR_EXTERNAL
+++D=BOOL	N=SR1_On	G=VAR_EXTERNAL
+++D=BOOL	N=SR2_On	G=VAR_EXTERNAL
+++D=FromSupervisorDT	N=FromSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=ResetRequired	G=VAR_EXTERNAL
+++D=REAL	N=ActualSpeed	G=VAR_EXTERNAL
+++D=WORD	N=HMICartNumber	G=VAR_EXTERNAL
+++D=INT	N=HMISerial	G=VAR_EXTERNAL

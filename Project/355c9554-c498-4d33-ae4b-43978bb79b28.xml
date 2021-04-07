@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CpuRackNetworkData Type="NexOptionboardIONode" SubType="" FormatVersion="1.00">
+  <NodeID>cbe4bc51-9d7d-4822-9308-35eea74c83e8</NodeID>
+  <ProfileKey>NX1W-CIF0110</ProfileKey>
+  <Slot>1</Slot>
+  <Ports />
+</CpuRackNetworkData>

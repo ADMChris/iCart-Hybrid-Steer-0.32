@@ -1,0 +1,344 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=BackCatchFitted	IV=True	G=VAR_GLOBAL
+++D=BOOL	N=StartPB	AT=BuiltInIO://cpu/#0/Input_Bit_00	G=VAR_GLOBAL
+++D=OM_Drive	N=Drive1Data	G=VAR_GLOBAL
+++D=OM_Drive	N=Drive2Data	G=VAR_GLOBAL
+++D=OM_Drive	N=FrontCatch	G=VAR_GLOBAL
+++D=OM_Drive	N=BackCatch	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=portDriveCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 1, Path := [16#1, 16#0, 16#2, 16#0, 16#1, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=portCameraCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 2, Path := [16#1, 16#0, 16#2, 16#0, 16#2, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
+++D=_sDEVICE_PORT	N=DriveDevicePort	G=VAR_GLOBAL
+++D=_sSERIAL_MODBUSRTU_OPTION	N=DriveOpt	G=VAR_GLOBAL
+++D=DriveState	N=FrontCatchState	IV=Idle	G=VAR_GLOBAL
+++D=DriveState	N=BackCatchState	IV=Idle	G=VAR_GLOBAL
+++D=BOOL	N=SR1_On	AT=BuiltInIO://cpu/#0/Input_Bit_01	G=VAR_GLOBAL	Com=Safety Relay 1 On
+++D=BOOL	N=SR2_On	AT=BuiltInIO://cpu/#0/Input_Bit_02	G=VAR_GLOBAL	Com=Safety Relay 2 On
+++D=BOOL	N=SR_Enable	G=VAR_GLOBAL	Com=Enable Safety Relays
+++D=DriveState	N=Drive1State	G=VAR_GLOBAL
+++D=DriveState	N=Drive2State	G=VAR_GLOBAL
+++D=BOOL	N=TrackingRequestPosition	G=VAR_GLOBAL
+++D=BOOL	N=TrackingPositionRequestDone	G=VAR_GLOBAL
+++D=INT	N=BatteryVoltage	G=VAR_GLOBAL
+++D=BOOL	N=RequestBLVStatus	G=VAR_GLOBAL
+++D=BOOL	N=BLVStatusRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestFrontCatchStatus	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchStatusRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestBackCatchStatus	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchStatusRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestCameraStatus	G=VAR_GLOBAL
+++D=BOOL	N=CameraStatusRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestHomeFrontCatch	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchHomeRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestHomeBackCatch	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchHomeRequestDone	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchCommsFault	Ord=1	G=VAR_GLOBAL
+++D=WORD	N=FrontCatchCommsFaultCode	Ord=2	G=VAR_GLOBAL
+++D=BOOL	N=AllowUpdate	G=VAR_GLOBAL
+++D=BOOL	N=RightIndicator	AT=BuiltInIO://cpu/#0/Output_Bit_04	G=VAR_GLOBAL
+++D=BOOL	N=AmberBeacon	AT=BuiltInIO://cpu/#0/Output_Bit_01	G=VAR_GLOBAL
+++D=BOOL	N=GreenBeacon	AT=BuiltInIO://cpu/#0/Output_Bit_02	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchCommsFault	Ord=1	G=VAR_GLOBAL
+++D=WORD	N=BackCatchCommsFaultCode	Ord=2	G=VAR_GLOBAL
+++D=BOOL	N=BLVCommsFault	G=VAR_GLOBAL
+++D=WORD	N=BLVCommsFaultCode	G=VAR_GLOBAL
+++D=BOOL	N=CameraCommsFault	G=VAR_GLOBAL
+++D=WORD	N=CameraCommsFaultCode	G=VAR_GLOBAL
+++D=UINT	N=BLVCommsFaultCounter	G=VAR_GLOBAL
+++D=UINT	N=FrontCatchCommsFaultCounter	G=VAR_GLOBAL
+++D=UINT	N=BackCatchCommsFaultCounter	G=VAR_GLOBAL
+++D=UINT	N=CameraCommsFaultCounter	G=VAR_GLOBAL
+++D=BOOL	N=BLVWaitForPort	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchWaitForPort	G=VAR_GLOBAL
+++D=BOOL	N=RequestBLVReset	G=VAR_GLOBAL
+++D=BOOL	N=BLVResetDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestFrontCatchReset	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchResetDone	G=VAR_GLOBAL
+++D=BOOL	N=RequestBackCatchReset	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchResetDone	G=VAR_GLOBAL
+++D=_sDEVICE_PORT	N=PFDevicePort	G=VAR_GLOBAL
+++D=_sSERIAL_SEND_OPTION	N=PFOption	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=PFDataSend	G=VAR_GLOBAL
+++D=_sSERIAL_CFG	N=PFSendCfg	G=VAR_GLOBAL
+++D=BOOL	N=TrackingInProgress	G=VAR_GLOBAL
+++D=UINT	N=InterUpdateCounter	G=VAR_GLOBAL
+++D=UDINT	N=TargetPosition	IV=30000	G=VAR_GLOBAL
+++D=INT	N=LeftSpeedOut	AT=IOBus://unit#5/Ch1 Analog Output Value	G=VAR_GLOBAL
+++D=BOOL	N=PauseAGV	G=VAR_GLOBAL
+++D=UINT	N=CommandFromSupervisor	NTP=PublicationInput	G=VAR_GLOBAL
+++D=UINT	N=YorkCount	R=1	G=VAR_GLOBAL
+++D=UINT	N=YorkPointer	R=1	G=VAR_GLOBAL
+++D=StoredSpeeds	N=StoredSpeed	IV=(Slow := 300, Medium := 600, Fast := 900, SlowAccel := 100, MediumAccel := 150, FastAccel := 250)	G=VAR_GLOBAL
+++D=BOOL	N=RaiseFrontCatch	G=VAR_GLOBAL
+++D=BOOL	N=LowerFrontCatch	G=VAR_GLOBAL
+++D=BOOL	N=RaiseBackCatch	G=VAR_GLOBAL
+++D=BOOL	N=LowerBackCatch	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchRaised	G=VAR_GLOBAL
+++D=BOOL	N=FrontCatchLowered	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchRaised	G=VAR_GLOBAL
+++D=BOOL	N=BackCatchLowered	G=VAR_GLOBAL
+++D=INT	N=SpeedFromInterrupt	IV=0	G=VAR_GLOBAL
+++D=BOOL	N=RunForward	G=VAR_GLOBAL
+++D=Directions	N=AGVDirection	R=1	IV=TurnLeft	G=VAR_GLOBAL
+++D=BOOL	N=TrolleySense1	G=VAR_GLOBAL
+++D=BOOL	N=TrolleySense2	G=VAR_GLOBAL
+++D=BOOL	N=TrolleySense3	G=VAR_GLOBAL
+++D=BOOL	N=EStopEngaged	AT=BuiltInIO://cpu/#0/Input_Bit_03	G=VAR_GLOBAL
+++D=BOOL	N=TrolleyInEscapement	R=1	G=VAR_GLOBAL
+++D=DINT	N=SSIPosition	G=VAR_GLOBAL
+++D=DWORD	N=SSIStatus	G=VAR_GLOBAL
+++D=BOOL	N=SSIUpdate	G=VAR_GLOBAL
+++D=BOOL	N=SSIError	G=VAR_GLOBAL
+++D=BOOL	N=SSIEnabled	G=VAR_GLOBAL
+++D=BYTE	N=SSIErrorCode	G=VAR_GLOBAL
+++D=TruckAlarms	N=Alarm	G=VAR_GLOBAL
+++D=BOOL	N=TrolleyDetected	G=VAR_GLOBAL
+++D=BOOL	N=AllowCartMove	G=VAR_GLOBAL
+++D=BOOL	N=SupervisorRequestUnload	G=VAR_GLOBAL
+++D=BOOL	N=SupervisorUnloadDone	G=VAR_GLOBAL
+++D=BOOL	N=SupervisorUnloadBusy	G=VAR_GLOBAL
+++D=FromMasterDT	N=FromMaster	G=VAR_GLOBAL
+++D=ToMasterDT	N=ToMaster	G=VAR_GLOBAL
+++D=ToSupervisorDT	N=ToSupervisor	R=1	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=BOOL	N=AGVRunning	G=VAR_GLOBAL
+++D=UINT	N=RequestTrolleySrcDat	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=BOOL	N=ShuttleReset	G=VAR_GLOBAL
+++D=BOOL	N=ScanReset	G=VAR_GLOBAL
+++D=BOOL	N=OffloadReset	G=VAR_GLOBAL
+++D=BOOL	N=UnloadReset	G=VAR_GLOBAL
+++D=BOOL	N=ReleaseIcart	G=VAR_GLOBAL
+++D=BOOL	N=StopAGV	G=VAR_GLOBAL
+++D=BOOL	N=RemoteStopAGV	G=VAR_GLOBAL
+++D=BOOL	N=RemoteStart	G=VAR_GLOBAL
+++D=TagDT	N=CurrentTag	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF WordBitUnion	N=RFIDControlWord	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF WordBitUnion	N=RFIDStatusWord	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=RFIDOutWord	AT=IOBus://unit#2/Port1 Output Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=RFIDInWord	AT=IOBus://unit#2/Port1 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=TagBytesHigh	AT=IOBus://unit#2/Port1 Input Data03	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=TagBytesLow	AT=IOBus://unit#2/Port1 Input Data04	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=TagData	G=VAR_GLOBAL
+++D=WordBitUnion	N=Scanfield	R=1	G=VAR_GLOBAL	Com=Current Scanfield 0 Based
+++D=BOOL	N=ScannerA1	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=ScannerA2	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=ScannerB1	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=ScannerB2	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=ScannerC1	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=ScannerC2	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=ScannerSTBY	AT=IOBus://unit#4/Output Bit 8 bits/Output Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=ScanWarnHigh	AT=BuiltInIO://cpu/#0/Input_Bit_04	G=VAR_GLOBAL
+++D=BOOL	N=ScanWarnLow	AT=BuiltInIO://cpu/#0/Input_Bit_05	G=VAR_GLOBAL
+++D=BOOL	N=AGVStarted	G=VAR_GLOBAL
+++D=BOOL	N=AGVSleep	G=VAR_GLOBAL
+++D=BOOL	N=ScanRedZone	AT=BuiltInIO://cpu/#0/Input_Bit_06	G=VAR_GLOBAL
+++D=INT	N=RightSpeedOut	AT=IOBus://unit#5/Ch2 Analog Output Value	G=VAR_GLOBAL
+++D=INT	N=JoystickSpeed	G=VAR_GLOBAL
+++D=INT	N=JoystickSteer	G=VAR_GLOBAL
+++D=BOOL	N=AudibleBeacon	AT=BuiltInIO://cpu/#0/Output_Bit_03	G=VAR_GLOBAL
+++D=BOOL	N=LeftIndicator	AT=BuiltInIO://cpu/#0/Output_Bit_05	G=VAR_GLOBAL
+++D=BOOL	N=RedBeacon	AT=BuiltInIO://cpu/#0/Output_Bit_00	G=VAR_GLOBAL	Com=Enable Safety Relays
+++D=BOOL	N=ManualOverride	G=VAR_GLOBAL
+++D=BOOL	N=ManualReverse	Ord=1	G=VAR_GLOBAL
+++D=WordBitUnion	N=Sensor	G=VAR_GLOBAL
+++D=WORD	N=SensorInWord	AT=IOBus://unit#3/Input Bit 16 bits	G=VAR_GLOBAL
+++D=BOOL	N=TrackLost	G=VAR_GLOBAL
+++D=REAL	N=Speed	IV=400	G=VAR_GLOBAL
+++D=REAL	N=AccelSteps	G=VAR_GLOBAL
+++D=WORD	N=HMICartNumber	AT=%D0	R=1	G=VAR_GLOBAL
+++D=BOOL	N=TagRequestBeep	R=1	G=VAR_GLOBAL
+++D=REAL	N=TagSpeed	R=1	G=VAR_GLOBAL
+++D=Speeds	N=TagRequestedSpeed	R=1	G=VAR_GLOBAL
+++D=BOOL	N=LowPriority	R=1	G=VAR_GLOBAL
+++D=BOOL	N=RequestStopAGV	G=VAR_GLOBAL
+++D=BOOL	N=ZoneInhibit	G=VAR_GLOBAL
+++D=BOOL	N=RemoteLockout	G=VAR_GLOBAL
+++D=BOOL	N=GlobalStop	G=VAR_GLOBAL
+++D=BOOL	N=SupervisorOK	G=VAR_GLOBAL
+++D=BOOL	N=Reader_Error	G=VAR_GLOBAL
+++D=WORD	N=HMIMessage	AT=%W100	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Array[0..98] OF WORD	N=CJ2OutData	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=Array[0..98] OF WORD	N=CJ2InData	NTP=PublicationInput	G=VAR_GLOBAL
+++D=WORD	N=CurrentTagHighWord	R=1	G=VAR_GLOBAL
+++D=WORD	N=CurrentTagLowWord	R=1	G=VAR_GLOBAL
+++D=WORD	N=LastTagHighWord	R=1	G=VAR_GLOBAL
+++D=WORD	N=LastTagLowWord	R=1	G=VAR_GLOBAL
+++D=BOOL	N=TrackLostLockout	G=VAR_GLOBAL
+++D=BOOL	N=TrackLostDebounced	G=VAR_GLOBAL
+++D=BOOL	N=RFIDCommsError	AT=IOBus://unit#2/Port1_2 I/O Port Error Status/Port1 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=RFIDIOLinkOK	AT=IOBus://unit#2/I/O Port Status/Port1 IN Data Enable	G=VAR_GLOBAL
+++D=BOOL	N=InstantStop	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=IOLinkSlice	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 2, Path := [16#1, 16#0, 16#2, 16#0, 16#2, 59(16#0)], PathLength := 6)	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=ShuntTrip	G=VAR_GLOBAL	Com=Trip Main CB
+++D=BOOL	N=DrivePower	AT=BuiltInIO://cpu/#0/Output_Bit_09	G=VAR_GLOBAL
+++D=BOOL	N=TripCoil	AT=BuiltInIO://cpu/#0/Output_Bit_08	G=VAR_GLOBAL
+++D=OM_Drive	N=Drive3Data	G=VAR_GLOBAL
+++D=DriveState	N=Drive3State	G=VAR_GLOBAL
+++D=BOOL	N=ResetRequired	AT=BuiltInIO://cpu/#0/Input_Bit_07	G=VAR_GLOBAL
+++D=BOOL	N=LeftEdgeSensor	G=VAR_GLOBAL
+++D=BOOL	N=LeftBoxSensor	G=VAR_GLOBAL
+++D=BOOL	N=RightBoxSensor	G=VAR_GLOBAL
+++D=BOOL	N=RightEdgeSensor	G=VAR_GLOBAL
+++D=RequestResponse	N=UnloadToRight	G=VAR_GLOBAL
+++D=RequestResponse	N=UnloadToLeft	G=VAR_GLOBAL
+++D=RequestResponse	N=LoadFromRight	G=VAR_GLOBAL
+++D=RequestResponse	N=LoadFromLeft	G=VAR_GLOBAL
+++D=WORD	N=HMITapeSensor	AT=%W101	G=VAR_GLOBAL
+++D=WORD	N=HMIRFIDStatus	AT=%W28	G=VAR_GLOBAL
+++D=WORD	N=HMIScanStatus	AT=%W31	G=VAR_GLOBAL
+++D=WORD	N=HMIScanfield	AT=%W30	G=VAR_GLOBAL
+++D=WORD	N=HMIBatteryStatus	AT=%W99	G=VAR_GLOBAL
+++D=WORD	N=HMIAvgSpeed	AT=%W98	G=VAR_GLOBAL
+++D=WORD	N=HMICurrentTagHigh	AT=%W20	Ord=3	G=VAR_GLOBAL
+++D=WORD	N=HMICurrentTagLow	AT=%W21	Ord=4	G=VAR_GLOBAL
+++D=WORD	N=HMILastTagHigh	AT=%W22	Ord=5	G=VAR_GLOBAL
+++D=WORD	N=HMILastTagLow	AT=%W23	Ord=6	G=VAR_GLOBAL
+++D=WORD	N=HMINextStation	AT=%W97	G=VAR_GLOBAL
+++D=WORD	N=HMILastStation	AT=%W96	G=VAR_GLOBAL
+++D=WORD	N=HMIMainStatus	AT=%W95	G=VAR_GLOBAL
+++D=BOOL	N=ForkDetected	G=VAR_GLOBAL
+++D=WORD	N=HMI_W200	AT=%W200	G=VAR_GLOBAL
+++D=BOOL	N=BoxPresent	G=VAR_GLOBAL
+++D=WORD	N=HMI_W201	AT=%W201	G=VAR_GLOBAL
+++D=WORD	N=HMI_W202	AT=%W202	G=VAR_GLOBAL
+++D=WORD	N=HMIBatteryVoltage	AT=%W94	G=VAR_GLOBAL
+++D=Parameters	N=Param	R=1	IV=(ConveyorEnable := False, SupervisorEnable := False, BeepOnTagRead := False, PalletConveyorEnable := False, BrakeAtStop := False, RapidStop := False, BeepInScanfield := T#5s, BeepAtStop := T#0S, WaitAtStop := T#0S, StationSpeed := 60)	G=VAR_GLOBAL
+++D=BOOL	N=HMIToggleConveyor	AT=%W120.0	G=VAR_GLOBAL
+++D=BOOL	N=HMIToggleSupervisor	AT=%W120.1	G=VAR_GLOBAL
+++D=BOOL	N=HMIToggleBeepOnTag	AT=%W120.2	G=VAR_GLOBAL
+++D=BOOL	N=HMIStatusConveyor	AT=%W125.0	G=VAR_GLOBAL
+++D=BOOL	N=HMIStatusSupervisor	AT=%W125.1	G=VAR_GLOBAL
+++D=BOOL	N=HMIStatusBeepOnTag	AT=%W125.2	G=VAR_GLOBAL
+++D=BOOL	N=HMIBrakeRelease	AT=%W93.0	G=VAR_GLOBAL
+++D=BOOL	N=HMIJogRev	AT=%W93.1	G=VAR_GLOBAL
+++D=BOOL	N=HMIJogFwd	AT=%W93.2	G=VAR_GLOBAL
+++D=BOOL	N=HMIJogLeft	AT=%W93.3	G=VAR_GLOBAL
+++D=BOOL	N=HMIJogRight	AT=%W93.4	G=VAR_GLOBAL
+++D=BOOL	N=HMIJogFast	AT=%W93.5	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvLeftEdge	AT=%W92.3	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvLeftBox	AT=%W92.4	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvRightBox	AT=%W92.5	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvRightEdge	AT=%W92.6	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvStopped	AT=%W92.1	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvIsLTR	AT=%W92.2	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvIsRTL	AT=%W92.0	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvStartRTL	AT=%W91.2	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvStop	AT=%W91.1	G=VAR_GLOBAL
+++D=BOOL	N=HMIConvStartLTR	AT=%W91.0	G=VAR_GLOBAL
+++D=REAL	N=TapePosition	G=VAR_GLOBAL
+++D=REAL	N=HMITapePosition	AT=%W89	G=VAR_GLOBAL
+++D=WORD	N=HMILampColour	AT=%W87	G=VAR_GLOBAL
+++D=WORD	N=HMIWifiStatus	AT=%W88	G=VAR_GLOBAL
+++D=BOOL	N=HMITogglePalletConveyor	AT=%W120.3	G=VAR_GLOBAL
+++D=BOOL	N=HMIStatusPalletConveyor	AT=%W125.3	G=VAR_GLOBAL
+++D=FromSupervisorDT	N=FromSupervisor	NTP=PublicationInput	G=VAR_GLOBAL
+++D=REAL	N=ActualSpeed	G=VAR_GLOBAL
+++D=STRING[18]	N=SupervisorIP	AT=%D10	R=1	G=VAR_GLOBAL
+++D=STRING[18]	N=WiFiIP	AT=%D20	R=1	G=VAR_GLOBAL
+++D=WORD	N=HMICurScreen	AT=%W11	G=VAR_GLOBAL
+++D=WORD	N=HMINextScreen	AT=%W10	G=VAR_GLOBAL
+++D=STRING[5]	N=HMILogicVersion	AT=%D60	R=1	G=VAR_GLOBAL
+++D=BOOL	N=NewTagRead	G=VAR_GLOBAL
+++D=INT	N=HMISerial	AT=%D70	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF WORD	N=HMI_IP	AT=%D30	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF WORD	N=HMI_Subnet	AT=%D40	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF WORD	N=HMI_Gateway	AT=%D50	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=TrailerData1	G=VAR_GLOBAL
+++D=BOOL	N=WaitAutoStart	R=1	G=VAR_GLOBAL
+++D=BOOL	N=TagRequestWait	G=VAR_GLOBAL
+++D=TIME	N=TagWaitTime	G=VAR_GLOBAL
+++D=DATE_AND_TIME	N=WaitUntil	G=VAR_GLOBAL
+++D=DriveData	N=Drive1	R=1	IV=(Speed := 0, Torque := 0, Alarm := 16#0, Warning := 16#0, PrevSpeed := 0, St := DS_Idle, Accel := 2, Decel := 2, TqLim := 200, PrevAccel := 0, PrevDecel := 0, PrevTqLim := 0, ReqTq := False, ReqInit := False, ReqReset := False, Ready := False, PrevSt := DS_Idle)	G=VAR_GLOBAL
+++D=DriveData	N=Drive2	R=1	IV=(Speed := 0, Torque := 0, Alarm := 16#0, Warning := 16#0, PrevSpeed := 0, St := DS_Idle, Accel := 2, Decel := 2, TqLim := 200, PrevAccel := 0, PrevDecel := 0, PrevTqLim := 0, ReqTq := False, ReqInit := False, ReqReset := False, Ready := False, PrevSt := DS_Idle)	G=VAR_GLOBAL
+++D=INT	N=SpeedOut	G=VAR_GLOBAL
+++D=TIME	N=QuickOffloadET	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVROK	AT=ECAT://node#1/1st transmit PDO Mapping_RS-485 Communication Respon_3E3D_00/Communication Reply (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_ADRERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2900_04/Remote Register ADR_ERR (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_ALM1	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT7 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_ALM2	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2400_02/NET-OUT12 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_BUSY	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2400_02/NET-OUT8 (AXIS 0)	G=VAR_GLOBAL
+++D=UINT	N=EC_BLVL_CMD	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register Command_2800_02	G=VAR_GLOBAL
+++D=UINT	N=EC_BLVL_CMDR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Command_R_2900_02	G=VAR_GLOBAL
+++D=DINT	N=EC_BLVL_DATA	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register Data_2800_03	G=VAR_GLOBAL
+++D=DINT	N=EC_BLVL_DATAR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Data_R_2900_03	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_DATERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2900_04/Remote Register STATUS (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_FWD	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN3 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_FWDR	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT3 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M0	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN0 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M0R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT0 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M1	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN1 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M1R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT1 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M2	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN2 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_M2R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT2 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_MOVE	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2400_02/NET-OUT13 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_REV	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN4 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_REVR	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT4 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_STOPMODE	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN5 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_STOPMODER	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT5 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_TQLIM	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2400_02/NET-OUT15 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_TRIG	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register TRIG_2800_04/Remote Register TRIG (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_TRIGR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2900_04/Remote Register TRIG_R (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_VA	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2400_02/NET-OUT14 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_WARN	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2400_01/NET-OUT6 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLV3OK	AT=ECAT://node#1/1st transmit PDO Mapping_RS-485 Communication Respon_3E3D_00/Communication Reply (AXIS 2)	G=VAR_GLOBAL
+++D=BOOL	N=EC_M1_ADRERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Status_2B00_04/Remote Monitor 0 ADR_ERR	G=VAR_GLOBAL
+++D=UINT	N=EC_M1_CMD	AT=ECAT://node#1/1st receive PDO Mapping_Remote Monitor Command_2A00_02	G=VAR_GLOBAL
+++D=BOOL	N=EC_M1_CMDERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Status_2B00_04/Remote Monitor 0 CMD_ERR	G=VAR_GLOBAL
+++D=UINT	N=EC_M1_CMDR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Command_R_2B00_02	G=VAR_GLOBAL
+++D=DINT	N=EC_M1_DATAR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Data_R_2B00_03	G=VAR_GLOBAL
+++D=USINT	N=EC_M1_ID	AT=ECAT://node#1/1st receive PDO Mapping_Remote Monitor Axis_2A00_01	G=VAR_GLOBAL
+++D=USINT	N=EC_M1_IDR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Axis_R_2B00_01	G=VAR_GLOBAL
+++D=BOOL	N=EC_M1_RUN	AT=ECAT://node#1/1st receive PDO Mapping_Remote Monitor TRIG_2A00_04/Remote Monitor 0 TRIG	G=VAR_GLOBAL
+++D=BOOL	N=EC_M1_RUNR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Status_2B00_04/Remote Monitor 0 TRIG_R	G=VAR_GLOBAL
+++D=BOOL	N=EC_M1_STATUS	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Monitor Status_2B00_04/Remote Monitor 0 STATUS	G=VAR_GLOBAL
+++D=UINT	N=EC_MON1_CMD	G=VAR_GLOBAL
+++D=DINT	N=EC_MON1_DATA	G=VAR_GLOBAL
+++D=BOOL	N=EC_MON1_RUN	G=VAR_GLOBAL
+++D=UINT	N=EC_SCANTIME	AT=ECAT://node#1/1st transmit PDO Mapping_RS-485 Communication Scan T_3E3B_00	G=VAR_GLOBAL
+++D=BOOL	N=K1On	G=VAR_GLOBAL	Com=K1 Closed
+++D=BOOL	N=SafeEdgeOK	G=VAR_GLOBAL	Com=Safedge Activated or Fault
+++D=BOOL	N=TrolleySenseBack	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVL_MBFREE	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2600_01/NET-IN7 (AXIS 0)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M0	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN0 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M1	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN1 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M2	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN2 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_FWD	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN4 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_REV	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN3 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_STOPMODE	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN5 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_MBFREE	AT=ECAT://node#1/1st receive PDO Mapping_NET-IN Lower_2601_01/NET-IN7 (AXIS 1)	G=VAR_GLOBAL
+++D=UINT	N=EC_BLVR_CMD	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register Command_2801_02	G=VAR_GLOBAL
+++D=DINT	N=EC_BLVR_DATA	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register Data_2801_03	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_TRIG	AT=ECAT://node#1/1st receive PDO Mapping_Remote Register TRIG_2801_04/Remote Register TRIG (AXIS 1)	G=VAR_GLOBAL
+++D=UINT	N=EC_BLVR_CMDR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Command_R_2901_02	G=VAR_GLOBAL
+++D=DINT	N=EC_BLVR_DATAR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Data_R_2901_03	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_BUSY	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2401_02/NET-OUT8 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_ALM2	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2401_02/NET-OUT12 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_MOVE	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2401_02/NET-OUT13 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_VA	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2401_02/NET-OUT14 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_TQLIM	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Upper_2401_02/NET-OUT15 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M0R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT0 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M1R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT1 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_M2R	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT2 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_FWDR	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT3 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_REVR	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT4 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_STOPMODER	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT5 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_WARN	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT6 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_ALM1	AT=ECAT://node#1/1st transmit PDO Mapping_NET-OUT Lower_2401_01/NET-OUT7 (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_TRIGR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2901_04/Remote Register TRIG_R (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_DATERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2901_04/Remote Register STATUS (AXIS 1)	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVR_ADRERR	AT=ECAT://node#1/1st transmit PDO Mapping_Remote Register Status_2901_04/Remote Register ADR_ERR (AXIS 1)	G=VAR_GLOBAL
+++D=USINT	N=EC_A0_COMM	AT=ECAT://node#1/1st receive PDO Mapping_Communication (Axis 0)_2D80_00	IV=0	G=VAR_GLOBAL
+++D=USINT	N=EC_A1_COMM	AT=ECAT://node#1/1st receive PDO Mapping_Communication (Axis 1)_2D81_00	IV=0	G=VAR_GLOBAL
+++D=USINT	N=EC_A2_COMM	AT=ECAT://node#1/1st receive PDO Mapping_Communication (Axis 2)_2D82_00	IV=0	G=VAR_GLOBAL
+++D=CBMCInDT	N=CBMC_PDIn	G=VAR_GLOBAL
+++D=CBMCOutDT	N=CBMC_PDOut	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDIn1	AT=IOBus://unit#2/Port2 Input Data01	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDIn2	AT=IOBus://unit#2/Port2 Input Data02	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDIn3	AT=IOBus://unit#2/Port2 Input Data03	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDIn4	AT=IOBus://unit#2/Port2 Input Data04	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDOut1	AT=IOBus://unit#2/Port2 Output Data01	G=VAR_GLOBAL
+++D=array[0..1] of byte	N=CBMCPDOut2	AT=IOBus://unit#2/Port2 Output Data02	G=VAR_GLOBAL
+++D=BOOL	N=EC_BLVLOK	AT=ECAT://node#1/1st transmit PDO Mapping_RS-485 Communication Respon_3E3D_00/Communication Reply (AXIS 0)	G=VAR_GLOBAL
+++D=USINT	N=EC_NVWRITE	AT=ECAT://node#1/1st receive PDO Mapping_Batch NV memory write_3E85_00	G=VAR_GLOBAL
+++D=BOOL	N=TagRequestDriveInit	G=VAR_GLOBAL
+++D=INT	N=TrackingCount	G=VAR_GLOBAL

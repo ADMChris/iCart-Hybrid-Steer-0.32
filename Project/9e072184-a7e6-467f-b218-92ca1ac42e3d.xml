@@ -1,0 +1,5 @@
+﻿{"CLs":[{"__type":"LD","Var":"Scanfield.Bit[0]"},{"__type":"ST","Ix":1,"Not":true,"Var":"ScannerA1","X":1},{"__type":"ST","Ix":2,"Var":"ScannerA2","X":1,"Y":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Scanfield.Bit[1]"},{"__type":"ST","Ix":1,"Not":true,"Var":"ScannerB1","X":1},{"__type":"ST","Ix":2,"Var":"ScannerB2","X":1,"Y":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"Scanfield.Bit[2]"},{"__type":"ST","Ix":1,"Not":true,"Var":"ScannerC1","X":1},{"__type":"ST","Ix":2,"Var":"ScannerC2","X":1,"Y":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+{"CLs":[{"__type":"LD","Var":"AGVSleep"},{"__type":"ST","Ix":1,"Var":"ScannerSTBY","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"ScanWarnHigh"},{"__type":"FB","In":[{"__type":"PF","Arg":"In"},{"__type":"PRM","Arg":"PT","Ix":2,"Type":"TIME","Var":"T#3s"}],"Ix":4,"Name":"TON","Out":[{"__type":"PF","Arg":"Q"},{"__type":"PRM","Arg":"ET","Ix":3,"Type":"TIME","Var":""}],"X":1,"Var":"ScanClearFB"},{"__type":"ST","Ix":1,"Var":"ScanWarnClearTimer","X":2}],"LRI":5,"RRI":6,"VLs":[]}

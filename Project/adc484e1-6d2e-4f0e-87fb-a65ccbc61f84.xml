@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=i	G=VAR
+++D=REAL	N=Derivative	G=VAR
+++D=REAL	N=Integral	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=REAL	N=Kp	Ord=0	G=VAR_INPUT
+++D=REAL	N=Kd	Ord=1	G=VAR_INPUT
+++D=REAL	N=Ki	Ord=2	G=VAR_INPUT
+++D=USINT	N=Ti	Ord=3	G=VAR_INPUT
+++D=REAL	N=Error	Ord=4	G=VAR_INPUT
+++D=Array[0..255] OF REAL	N=DelayLine	Ord=5	G=VAR_IN_OUT
+++D=REAL	N=Output	Ord=6	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

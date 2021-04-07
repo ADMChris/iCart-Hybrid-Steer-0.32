@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="Main" InstanceName="Main" IniFileTrackingId="06c643ab9649459484775515d5091ba7" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Supervisor" InstanceName="Supervisor" IniFileTrackingId="7e04fa6846b74d618cefcb4539dcbc14" StartupSetting="TRUE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="FloorReader" InstanceName="FloorReader" IniFileTrackingId="0e82fb0eba16472997b6bc007afd9f19" StartupSetting="TRUE" SequenceNumber="4" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="DoTracking" InstanceName="DoTracking" IniFileTrackingId="6b4bc1497e2144aba3b7b0c13353e14e" StartupSetting="TRUE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Drive3" InstanceName="Drive3" IniFileTrackingId="414ebe80d32b439283e8324506ea3a84" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Drive1CMD" InstanceName="Drive1CMD" IniFileTrackingId="e96ef2a88c544b3681034741216deb3b" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Drive2CMD" InstanceName="Drive2CMD" IniFileTrackingId="5491e30411404c2496f6481588c55d51" StartupSetting="TRUE" SequenceNumber="7" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="95479be3-1260-4ea7-88f9-dbd119025417" />
+    <RefreshUnitId RefreshUnitId="02518822-31b9-4dd0-a272-493f773e990e" />
+    <RefreshUnitId RefreshUnitId="0b7c7619-bc20-4588-8d4c-cc878f48fd7c" />
+    <RefreshUnitId RefreshUnitId="3503fa19-bc75-4c5f-8bda-087af52e66ef" />
+    <RefreshUnitId RefreshUnitId="cfb2d1b1-aeff-4aef-a2e6-358b285fd184" />
+    <RefreshUnitId RefreshUnitId="21311d1b-2899-447a-869d-e68a81933d2b" />
+    <RefreshUnitId RefreshUnitId="1874514a-175c-4198-927a-9bc1b8ab6f6c" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

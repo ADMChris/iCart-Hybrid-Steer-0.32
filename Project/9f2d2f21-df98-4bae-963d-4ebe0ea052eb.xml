@@ -1,0 +1,431 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=StartupStates	N=StartState	G=VAR
+++D=BOOL	N=OkToStart	G=VAR
+++D=TON	N=OkToStartTimer_FB	G=VAR
+++D=TIME	N=OkToStartTimer_ET	G=VAR
+++D=BOOL	N=OkToStartTimerDone	G=VAR
+++D=BOOL	N=AllowAutoStart	G=VAR
+++D=BOOL	N=CriticalFault	G=VAR
+++D=BOOL	N=CrashDrive	G=VAR
+++D=BOOL	N=DoStartSequence	G=VAR
+++D=BOOL	N=StartSequenceDone	G=VAR
+++D=BOOL	N=StartSequenceError	G=VAR
+++D=BOOL	N=StartCatchHomeTimer	G=VAR
+++D=TON	N=CatchHomeTimer_FB	G=VAR
+++D=TIME	N=CatchHomeTimer_ET	G=VAR
+++D=BOOL	N=CatchHomeTimerDone	G=VAR
+++D=BOOL	N=StartFSMTimeout	G=VAR
+++D=TON	N=FSMTimeout_FB	G=VAR
+++D=TIME	N=FSMTimeout_ET	G=VAR
+++D=BOOL	N=StartupTimeoutFault	G=VAR
+++D=StartupStates	N=StartupFaultState	G=VAR
+++D=BOOL	N=Fault_SR1Closed	G=VAR	Com=SR1 Stuck Closed
+++D=BOOL	N=Fault_SR2Closed	G=VAR	Com=SR2 Stuck Closed
+++D=BOOL	N=Fault_SR1Open	G=VAR	Com=SR1 Stuck Open
+++D=BOOL	N=Fault_SR2Open	G=VAR	Com=SR2 Stuck Open
+++D=BOOL	N=Fault_DriveStatus	G=VAR	Com=Couldn't Read Drive Status
+++D=BOOL	N=Fault_DriveFault	G=VAR	Com=Drive has alarm
+++D=BOOL	N=Fault_FrontCatchStatus	G=VAR	Com=Couldn't read front catch status
+++D=BOOL	N=Fault_FrontCatchFault	G=VAR	Com=Front catch has alarm
+++D=BOOL	N=Fault_BackCatchStatus	G=VAR	Com=Couldn't read back catch status
+++D=BOOL	N=Fault_BackCatchFault	G=VAR	Com=Back catch has alarm
+++D=BOOL	N=Fault_FrontCatchCollision	G=VAR	Com=Front catch port was in use
+++D=BOOL	N=Fault_BackCatchF	G=VAR
+++D=BOOL	N=Fault	G=VAR	Com=Fault Master
+++D=BOOL	N=Fault_BackCatchCollision	G=VAR	Com=Back catch port was in use
+++D=BOOL	N=Fault_BackCatchCollisio	G=VAR
+++D=BOOL	N=Fault_FrontCatchHomeCmd	G=VAR	Com=Front catch home cmd error
+++D=BOOL	N=Fault_FrontCatchHoming	G=VAR	Com=Front catch didn't  home
+++D=BOOL	N=Fault_BackCatchHomeCmd	G=VAR	Com=Back catch home cmd error
+++D=BOOL	N=Fault_BackCatchHoming	G=VAR	Com=Back catch didn't home
+++D=BOOL	N=Fault_BLVCollision	G=VAR	Com=BLV Drive port was in use
+++D=BOOL	N=CommsFault	G=VAR	Com=Comms Fault Master
+++D=BOOL	N=Fault_CameraStatus	G=VAR	Com=Couldn't read camera status
+++D=BOOL	N=Fault_CameraFault	G=VAR	Com=Camera has warning
+++D=BOOL	N=Fault_SupervisorConnect	G=VAR	Com=Couldn't connect to supervisor
+++D=BOOL	N=Fault_SupervisorFault	G=VAR	Com=Start interlocked by supervisor
+++D=BOOL	N=Fault_BatteryFault	G=VAR	Com=Battery level below cutoff
+++D=BOOL	N=DriveFWD	G=VAR
+++D=BOOL	N=BLV_Fwd	G=VAR
+++D=BOOL	N=UpdateInCmd	G=VAR
+++D=BOOL	N=BLV_Rev	G=VAR
+++D=BOOL	N=BLV_Stop	G=VAR	Com=Decel Stop
+++D=BOOL	N=BLV_Crash	G=VAR
+++D=BOOL	N=Drive1ResetAttempted	G=VAR
+++D=BOOL	N=Drive2ResetAttempted	G=VAR
+++D=BOOL	N=Fault_ResetBLV	G=VAR	Com=Error trying to reset drive
+++D=BOOL	N=Fault_ResetFront	G=VAR	Com=Error trying to reset front catch
+++D=BOOL	N=Fault_ResetBack	G=VAR	Com=Error trying to reset back catch
+++D=BOOL	N=Warning	G=VAR	Com=Warn Master
+++D=BOOL	N=BLVConsecutiveCommsFault	G=VAR
+++D=BOOL	N=ConsecutiveCommsFault	G=VAR	Com=>3 Consecutive comms fault
+++D=BOOL	N=FrontCatchConsecutiveCommsFault	G=VAR
+++D=BOOL	N=BackCatchConsecutiveCommsFault	G=VAR
+++D=BOOL	N=DriveFault	G=VAR
+++D=TON	N=DrivePowerOnTimer	G=VAR
+++D=TIME	N=DrivePowerOnTimerET	G=VAR
+++D=BOOL	N=DrivePowerOn	G=VAR
+++D=TON	N=CheckFrontCatchUpTimer	G=VAR
+++D=INT	N=AlarmInfo1	G=VAR
+++D=INT	N=AlarmInfo2	G=VAR
+++D=BOOL	N=MoveBusy	G=VAR
+++D=UDINT	N=PosDevThreshold	IV=2000	G=VAR
+++D=BOOL	N=Sensor1Timer	G=VAR
+++D=BOOL	N=Sensor2Timer	G=VAR
+++D=BOOL	N=Sensor3Timer	G=VAR
+++D=TOF	N=Sense1TimerFB	G=VAR
+++D=TIME	N=SenseOffsetDelay	IV=T#8ms	G=VAR
+++D=TIME	N=Sense1TimerEET	G=VAR
+++D=TOF	N=Sense2TimerFB	G=VAR
+++D=TIME	N=Sense2TimerET	G=VAR
+++D=TOF	N=Sense3TimerFB	G=VAR
+++D=TIME	N=Sense3TimerET	G=VAR
+++D=BOOL	N=EStopMemoryFlag	G=VAR
+++D=BOOL	N=EnableTrolleyPointer	G=VAR
+++D=BOOL	N=Drive1ConsecutiveCommsFault	G=VAR
+++D=BOOL	N=Drive2ConsecutiveCommsFault	G=VAR
+++D=BOOL	N=Drive1ResetInhibit	G=VAR
+++D=BOOL	N=BLV_Brake	G=VAR
+++D=TON	N=BuzzerTimeoutFB	G=VAR
+++D=BOOL	N=BuzzerTimedOut	G=VAR
+++D=TON	N=TrackLostDebounceFB	G=VAR
+++D=BOOL	N=TrackLostDebounced	G=VAR
+++D=TON	N=TrackLostLockoutFB	G=VAR
+++D=Speeds	N=RequestedSpeed	G=VAR
+++D=BOOL	N=ForceSlowSpeed	G=VAR
+++D=REAL	N=CustomSpeed	G=VAR
+++D=BOOL	N=InhibitSlowSpeed	G=VAR
+++D=BOOL	N=Inhibit	G=VAR
+++D=BOOL	N=BatteryLow	G=VAR
+++D=BOOL	N=UVL	G=VAR
+++D=BOOL	N=UVLO	G=VAR	Com=Undervoltage Lockout
+++D=BOOL	N=Off	G=VAR
+++D=BOOL	N=RFI	G=VAR
+++D=INT	N=BatteryThreshold	IV=2280	G=VAR
+++D=INT	N=UVLOThreshold	IV=2200	G=VAR
+++D=TON	N=UVLTimerFB	G=VAR
+++D=Directions	N=PrevDirection	G=VAR
+++D=TON	N=DirectionChangeTimer	G=VAR
+++D=BOOL	N=DirectionChanged	G=VAR
+++D=BOOL	N=ScanWarnClearTimer	G=VAR
+++D=TON	N=ScanClearFB	G=VAR
+++D=RestartNXUnit	N=RestartRFIDCommsFB	G=VAR
+++D=TON	N=RFIDFaultTimer	G=VAR
+++D=TON	N=TripTimerFB	G=VAR
+++D=BOOL	N=Conveyor_RTL	G=VAR	Com=Run Right to Left
+++D=BOOL	N=Conveyor_LTR	G=VAR	Com=Run Left to RIght
+++D=BOOL	N=LoadInProgress	G=VAR
+++D=BOOL	N=LoadComplete	G=VAR
+++D=BOOL	N=LoadIn	G=VAR
+++D=TON	N=LoadCompleteTimerFB	G=VAR
+++D=TON	N=RightLoadCompleteTimerFB	G=VAR
+++D=TON	N=LeftLoadCompleteTimerFB	G=VAR
+++D=TON	N=LeftUnloadCompleteTimerFB	G=VAR
+++D=TON	N=RightUnloadCompleteTimerFB	G=VAR
+++D=BOOL	N=TransferBusy	G=VAR
+++D=BOOL	N=TagRequestLeftLoad	G=VAR
+++D=TON	N=AGVStoppedTimer	G=VAR
+++D=BOOL	N=AGVStopped	G=VAR	Com=AGV at standstill
+++D=WordBitUnion	N=ScanStatus	G=VAR
+++D=WordBitUnion	N=RFIDStatus	G=VAR
+++D=STRING[8]	N=CurrentTagString	G=VAR
+++D=INT	N=SummedSpeeds	G=VAR
+++D=INT	N=AverageSpeed	G=VAR
+++D=BOOL	N=AllowVoltageChange	G=VAR
+++D=TON	N=VoltageChangeTimer	G=VAR
+++D=WordBitUnion	N=MainStatus	G=VAR
+++D=WordBitUnion	N=FaultWord1	G=VAR	EC=<ECs><EC EK="Bit[2]" C="SR1 OPEN FAULT" /><EC EK="Bit[1]" C="WARN MASTER" /><EC EK="Bit[0]" C="FAULT MASTER" /><EC EK="Bit[3]" C="SR2 OPEN FAULT" /><EC EK="Bit[4]" C="SR1 CLOSE FAULT" /><EC EK="Bit[5]" C="SR2 CLOSE FAULT" /><EC EK="Bit[6]" C="DRIVE READ FAIL" /><EC EK="Bit[7]" C="DRIVE FAULT" /><EC EK="Bit[8]" C="NETWORK FAIL" /><EC EK="Bit[9]" C="SUPERVISOR FAULT" /><EC EK="Bit[10]" C="BATTERY LOW" /><EC EK="Bit[11]" C="DRIVE RESET FAULT" /></ECs>
+++D=WordBitUnion	N=FaultWord2	G=VAR
+++D=WordBitUnion	N=FaultWord3	G=VAR
+++D=BOOL	N=HMIStatus	G=VAR
+++D=BOOL	N=BLV_BrakeRel	G=VAR
+++D=BOOL	N=HMIJoh	G=VAR
+++D=BOOL	N=HMIJog	G=VAR
+++D=BOOL	N=Manual_RTL	G=VAR
+++D=BOOL	N=Manual_LTR	G=VAR
+++D=BOOL	N=GetWifiStatus	G=VAR
+++D=SktTCPConnect	N=ConnectWifiFB	G=VAR
+++D=_sSOCKET	N=WifiSKT	G=VAR
+++D=BOOL	N=ConnectWifiSkt	G=VAR
+++D=BOOL	N=WifiSktConnected	G=VAR
+++D=BOOL	N=WifiSktConnectError	G=VAR
+++D=WORD	N=WifiSktErrorID	G=VAR
+++D=SktTCPSend	N=RequestWifiStatusFB	G=VAR
+++D=STRING[64]	N=RequestStatusString	G=VAR
+++D=UINT	N=RequestStatusLength	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=RequestStatusBytes	G=VAR
+++D=BOOL	N=WifiRequestSent	G=VAR
+++D=BOOL	N=WifiSendError	G=VAR
+++D=WORD	N=WifiSendErrorID	G=VAR
+++D=BOOL	N=ReceiveStatus	G=VAR
+++D=SktTCPRcv	N=ReceiveWifiStatusFB	G=VAR
+++D=Array[0..1999] OF BYTE	N=WifiReceiveBytes	G=VAR
+++D=BOOL	N=WifiReceiveError	G=VAR
+++D=WORD	N=WifiReceiveErrorID	G=VAR
+++D=UINT	N=WifiReceiveSize	G=VAR
+++D=BOOL	N=WifiStatusReceived	G=VAR
+++D=BOOL	N=CloseSkt	G=VAR
+++D=SktClearBuf	N=ClearBufFB	G=VAR
+++D=SktClose	N=CloseSktFB	G=VAR
+++D=BOOL	N=GetSktStatus	G=VAR
+++D=SktGetTCPStatus	N=SktGetStatusFB	G=VAR
+++D=BOOL	N=GetSktStatusError	G=VAR
+++D=WORD	N=GetSktStatusErrorID	G=VAR
+++D=_eCONNECTION_STATE	N=SktStatus	G=VAR
+++D=BOOL	N=SktStatusFLag	G=VAR
+++D=BOOL	N=Drive3ConsecutiveCommsFault	G=VAR
+++D=BOOL	N=ConveyorFitted	G=VAR
+++D=BOOL	N=D1_Fwd	G=VAR
+++D=BOOL	N=D1_Rev	G=VAR
+++D=BOOL	N=D2_Fwd	G=VAR
+++D=BOOL	N=D2_Rev	G=VAR
+++D=STRING[18]	N=PrevCartIP	G=VAR
+++D=STRING[18]	N=PrevCartSubnet	G=VAR
+++D=STRING[18]	N=PrevCartGateway	G=VAR
+++D=ChangeIPAdr	N=ChangeIPFB	G=VAR
+++D=BOOL	N=ChgIPBusy	G=VAR
+++D=BOOL	N=ChangeIP	G=VAR
+++D=BOOL	N=ChgIPDone	G=VAR
+++D=BOOL	N=ChgIPError	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=NewIP	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=SubMask	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=Gateway	G=VAR
+++D=WORD	N=ChgIPErrorID	G=VAR
+++D=STRING[16]	N=TempString	G=VAR
+++D=USINT	N=i	G=VAR
+++D=UINT	N=Length	G=VAR
+++D=UINT	N=Offset	G=VAR
+++D=STRING[16]	N=InStr	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=OutAry	G=VAR
+++D=BOOL	N=AllowIPChange	G=VAR
+++D=BOOL	N=FBChangeIP	G=VAR
+++D=TP	N=TagBeepTimerFB	G=VAR
+++D=STRING[20]	N=TempString2	G=VAR
+++D=STRING[18]	N=FirstString	G=VAR
+++D=ARRAY[0..3] OF STRING[18]	N=TempStringA	G=VAR
+++D=BOOL	N=HMIChangeIP	AT=%W130.0	G=VAR
+++D=INT	N=ChgIPSt	G=VAR
+++D=BOOL	N=ChangeIPError	G=VAR
+++D=WORD	N=ChangeIPErrorID	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=PrevNewIP	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=PrevGateway	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=PrevSubmask	G=VAR
+++D=BOOL	N=IntPauseAGV	G=VAR
+++D=TOF	N=AGVStartTimer	G=VAR
+++D=INT	N=ScanfieldInt	G=VAR
+++D=TON	N=LeftLoad1BoxTimer	G=VAR
+++D=TON	N=RightLoad1BoxTImer	G=VAR
+++D=BOOL	N=BlockStop	G=VAR
+++D=BOOL	N=TagRe	G=VAR
+++D=TON	N=TagWaitTimer	G=VAR
+++D=TON	N=ScanfieldBeepTimerFB	G=VAR
+++D=BOOL	N=AllowScanfieldBeep	G=VAR
+++D=BOOL	N=InhibitScanBeep	G=VAR
+++D=TON	N=RFIDFaultHMITimer	G=VAR
+++D=BOOL	N=WaitAtStopTag	G=VAR
+++D=BOOL	N=testbit	G=VAR
+++D=ARRAY[0..7] OF BYTE	N=CBMCInAry	G=VAR
+++D=ARRAY[0..2] OF BYTE	N=CBMCOutAry	G=VAR
+++D=TON	N=ECInitTimerFB	G=VAR
+++D=TON	N=ECPowerCycleTimerFB	G=VAR
+++D=TON	N=ECWriteTimerFB	G=VAR
+++D=BOOL	N=EC_BLVL_m9	Ord=1	G=VAR	AOE=1
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=SR_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=SR1_On	G=VAR_EXTERNAL
+++D=BOOL	N=SR2_On	G=VAR_EXTERNAL
+++D=OM_Drive	N=Drive1Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="InCmd.Bit[3]" C="Forward" /><EC EK="InCmd.Bit[4]" C="Reverse" /><EC EK="InCmd.Bit[5]" C="Decel Stop" /><EC EK="CommsFault" C="'" /><EC EK="OutCmd.Bit[7]" C="Alarm out" /></ECs>
+++D=OM_Drive	N=Drive2Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="InCmd.Bit[3]" C="Forward" /><EC EK="InCmd.Bit[4]" C="Reverse" /><EC EK="InCmd.Bit[5]" C="Decel Stop" /><EC EK="OutCmd.Bit[7]" C="Alarm Out" /><EC EK="OutCmd.Bit[6]" C="Warning" /><EC EK="OutCmd.Bit[3]" C="Forward Cmd" /><EC EK="OutCmd.Bit[4]" C="Reverse Cmd" /><EC EK="InCmd.Bit[1]" C="M1" /><EC EK="InCmd.Bit[0]" C="M0" /></ECs>
+++D=INT	N=BatteryVoltage	G=VAR_EXTERNAL
+++D=BOOL	N=StartPB	G=VAR_EXTERNAL
+++D=BOOL	N=AllowUpdate	G=VAR_EXTERNAL
+++D=BOOL	N=GreenBeacon	G=VAR_EXTERNAL
+++D=BOOL	N=RedBeacon	G=VAR_EXTERNAL
+++D=BOOL	N=AmberBeacon	G=VAR_EXTERNAL
+++D=BOOL	N=BLVCommsFault	G=VAR_EXTERNAL
+++D=WORD	N=BLVCommsFaultCode	G=VAR_EXTERNAL
+++D=DriveState	N=Drive1State	G=VAR_EXTERNAL
+++D=BOOL	N=RequestBLVReset	G=VAR_EXTERNAL
+++D=BOOL	N=BLVResetDone	G=VAR_EXTERNAL
+++D=BOOL	N=RequestBackCatchReset	G=VAR_EXTERNAL
+++D=BOOL	N=BackCatchResetDone	G=VAR_EXTERNAL
+++D=BOOL	N=RequestFrontCatchReset	G=VAR_EXTERNAL
+++D=BOOL	N=FrontCatchResetDone	G=VAR_EXTERNAL
+++D=UINT	N=BLVCommsFaultCounter	G=VAR_EXTERNAL
+++D=UINT	N=FrontCatchCommsFaultCounter	G=VAR_EXTERNAL
+++D=UINT	N=BackCatchCommsFaultCounter	G=VAR_EXTERNAL
+++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
+++D=INT	N=LeftSpeedOut	G=VAR_EXTERNAL
+++D=INT	N=RightSpeedOut	G=VAR_EXTERNAL
+++D=BOOL	N=PauseAGV	G=VAR_EXTERNAL
+++D=BOOL	N=RunForward	G=VAR_EXTERNAL
+++D=TruckAlarms	N=Alarm	G=VAR_EXTERNAL	EC=<ECs><EC EK="Startup.BackCatchFault" C="Back Catch has Alarm" /><EC EK="Startup.BackCatchReadFault" C="Couldn't read back catch status" /><EC EK="Startup.FrontCatchFault" C="Front catch has alarm" /></ECs>
+++D=BOOL	N=TrolleySense1	G=VAR_EXTERNAL
+++D=BOOL	N=TrolleySense2	G=VAR_EXTERNAL
+++D=BOOL	N=TrolleySense3	G=VAR_EXTERNAL
+++D=BOOL	N=TrolleyDetected	G=VAR_EXTERNAL
+++D=UINT	N=YorkPointer	G=VAR_EXTERNAL
+++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteStopAGV	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteStart	G=VAR_EXTERNAL
+++D=WordBitUnion	N=Scanfield	G=VAR_EXTERNAL	Com=Current Fieldset
+++D=BOOL	N=ScannerA1	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerA2	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerB1	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerB2	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerC1	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerC2	G=VAR_EXTERNAL
+++D=BOOL	N=ScannerSTBY	G=VAR_EXTERNAL
+++D=BOOL	N=ScanWarnHigh	G=VAR_EXTERNAL
+++D=BOOL	N=AGVStarted	G=VAR_EXTERNAL
+++D=BOOL	N=AGVSleep	G=VAR_EXTERNAL
+++D=BOOL	N=ScanRedZone	G=VAR_EXTERNAL
+++D=BOOL	N=ManualOverride	G=VAR_EXTERNAL
+++D=BOOL	N=ManualReverse	G=VAR_EXTERNAL
+++D=Directions	N=AGVDirection	G=VAR_EXTERNAL
+++D=BOOL	N=LeftIndicator	G=VAR_EXTERNAL
+++D=BOOL	N=RightIndicator	G=VAR_EXTERNAL
+++D=BOOL	N=AudibleBeacon	G=VAR_EXTERNAL
+++D=BOOL	N=TrackLost	G=VAR_EXTERNAL
+++D=BOOL	N=ScanWarnLow	G=VAR_EXTERNAL
+++D=StoredSpeeds	N=StoredSpeed	G=VAR_EXTERNAL
+++D=REAL	N=Speed	G=VAR_EXTERNAL
+++D=REAL	N=AccelSteps	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestBeep	G=VAR_EXTERNAL
+++D=REAL	N=TagSpeed	G=VAR_EXTERNAL
+++D=Speeds	N=TagRequestedSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=LowPriority	G=VAR_EXTERNAL
+++D=BOOL	N=ZoneInhibit	G=VAR_EXTERNAL
+++D=BOOL	N=GlobalStop	G=VAR_EXTERNAL
+++D=BOOL	N=RemoteLockout	G=VAR_EXTERNAL
+++D=BOOL	N=Reader_Error	G=VAR_EXTERNAL
+++D=BOOL	N=EStopEngaged	G=VAR_EXTERNAL
+++D=WORD	N=HMIMessage	G=VAR_EXTERNAL
+++D=BOOL	N=TrackLostLockout	G=VAR_EXTERNAL
+++D=BOOL	N=RFIDCommsError	G=VAR_EXTERNAL
+++D=BOOL	N=RFIDIOLinkOK	G=VAR_EXTERNAL
+++D=_sNXUNIT_ID	N=IOLinkSlice	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=RequestStopAGV	G=VAR_EXTERNAL
+++D=BOOL	N=InstantStop	G=VAR_EXTERNAL
+++D=BOOL	N=ShuntTrip	G=VAR_EXTERNAL
+++D=BOOL	N=DrivePower	G=VAR_EXTERNAL
+++D=OM_Drive	N=Drive3Data	G=VAR_EXTERNAL	EC=<ECs><EC EK="OutCmd.Bit[7]" C="Alarm Out" /></ECs>
+++D=BOOL	N=LeftBoxSensor	G=VAR_EXTERNAL
+++D=BOOL	N=RightBoxSensor	G=VAR_EXTERNAL
+++D=BOOL	N=LeftEdgeSensor	G=VAR_EXTERNAL
+++D=BOOL	N=RightEdgeSensor	G=VAR_EXTERNAL
+++D=RequestResponse	N=UnloadToRight	G=VAR_EXTERNAL
+++D=RequestResponse	N=UnloadToLeft	G=VAR_EXTERNAL
+++D=RequestResponse	N=LoadFromRight	G=VAR_EXTERNAL
+++D=RequestResponse	N=LoadFromLeft	G=VAR_EXTERNAL
+++D=WORD	N=SensorInWord	G=VAR_EXTERNAL
+++D=WORD	N=HMITapeSensor	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF WordBitUnion	N=RFIDStatusWord	G=VAR_EXTERNAL
+++D=WORD	N=HMIRFIDStatus	G=VAR_EXTERNAL
+++D=WORD	N=HMIScanStatus	G=VAR_EXTERNAL
+++D=WORD	N=HMIScanfield	G=VAR_EXTERNAL
+++D=ToSupervisorDT	N=ToSupervisor	G=VAR_EXTERNAL
+++D=WORD	N=HMIBatteryStatus	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=RFIDInWord	G=VAR_EXTERNAL
+++D=BOOL	N=ResetRequired	G=VAR_EXTERNAL
+++D=WORD	N=HMIAvgSpeed	G=VAR_EXTERNAL
+++D=TagDT	N=CurrentTag	G=VAR_EXTERNAL
+++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
+++D=WORD	N=LastTagLowWord	G=VAR_EXTERNAL
+++D=WORD	N=HMICurrentTagHigh	G=VAR_EXTERNAL
+++D=WORD	N=HMICurrentTagLow	G=VAR_EXTERNAL
+++D=WORD	N=HMILastTagHigh	G=VAR_EXTERNAL
+++D=WORD	N=HMILastTagLow	G=VAR_EXTERNAL
+++D=WORD	N=HMINextStation	G=VAR_EXTERNAL
+++D=WORD	N=HMILastStation	G=VAR_EXTERNAL
+++D=WORD	N=HMIMainStatus	G=VAR_EXTERNAL
+++D=BOOL	N=ForkDetected	G=VAR_EXTERNAL
+++D=WORD	N=HMI_W200	G=VAR_EXTERNAL
+++D=BOOL	N=BoxPresent	G=VAR_EXTERNAL
+++D=WORD	N=HMI_W201	G=VAR_EXTERNAL
+++D=WORD	N=HMI_W202	G=VAR_EXTERNAL
+++D=WORD	N=HMIBatteryVoltage	G=VAR_EXTERNAL
+++D=BOOL	N=HMIToggleConveyor	G=VAR_EXTERNAL
+++D=Parameters	N=Param	G=VAR_EXTERNAL
+++D=BOOL	N=HMIStatusConveyor	G=VAR_EXTERNAL
+++D=BOOL	N=HMIToggleSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=HMIStatusSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=HMIToggleBeepOnTag	G=VAR_EXTERNAL
+++D=BOOL	N=HMIStatusBeepOnTag	G=VAR_EXTERNAL
+++D=BOOL	N=HMIBrakeRelease	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogFwd	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogRev	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogLeft	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogRight	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvIsLTR	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvIsRTL	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvStopped	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvStartLTR	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvStartRTL	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvStop	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvLeftBox	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvRightBox	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvRightEdge	G=VAR_EXTERNAL
+++D=BOOL	N=HMIConvLeftEdge	G=VAR_EXTERNAL
+++D=REAL	N=HMITapePosition	G=VAR_EXTERNAL
+++D=REAL	N=TapePosition	G=VAR_EXTERNAL
+++D=WORD	N=HMILampColour	G=VAR_EXTERNAL	Com=R->O->G
+++D=BOOL	N=HMITogglePalletConveyor	G=VAR_EXTERNAL
+++D=BOOL	N=HMIStatusPalletConveyor	G=VAR_EXTERNAL
+++D=WORD	N=HMICurScreen	G=VAR_EXTERNAL
+++D=WORD	N=HMINextScreen	G=VAR_EXTERNAL
+++D=STRING[18]	N=WiFiIP	G=VAR_EXTERNAL
+++D=BOOL	N=CameraCommsFault	G=VAR_EXTERNAL
+++D=STRING[5]	N=HMILogicVersion	G=VAR_EXTERNAL
+++D=BOOL	N=NewTagRead	G=VAR_EXTERNAL
+++D=ARRAY[0..3] OF WORD	N=HMI_IP	G=VAR_EXTERNAL
+++D=ARRAY[0..3] OF WORD	N=HMI_Subnet	G=VAR_EXTERNAL
+++D=ARRAY[0..3] OF WORD	N=HMI_Gateway	G=VAR_EXTERNAL
+++D=BOOL	N=SupervisorOK	G=VAR_EXTERNAL
+++D=WORD	N=HMIWifiStatus	G=VAR_EXTERNAL
+++D=STRING[18]	N=SupervisorIP	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=TrailerData1	G=VAR_EXTERNAL
+++D=FromSupervisorDT	N=FromSupervisor	G=VAR_EXTERNAL
+++D=BOOL	N=WaitAutoStart	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestWait	G=VAR_EXTERNAL
+++D=TIME	N=TagWaitTime	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogFast	G=VAR_EXTERNAL
+++D=DATE_AND_TIME	N=WaitUntil	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_REV	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_STOPMODE	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_MBFREE	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_FWD	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_REV	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_STOPMODE	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_MBFREE	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_M1	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_M1	G=VAR_EXTERNAL
+++D=DriveData	N=Drive1	G=VAR_EXTERNAL
+++D=DriveData	N=Drive2	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_ALM1	G=VAR_EXTERNAL	Com=Left Drive Alarm
+++D=BOOL	N=EC_BLVR_ALM1	G=VAR_EXTERNAL	Com=Right Drive Alarm
+++D=array[0..1] of byte	N=CBMCPDIn1	G=VAR_EXTERNAL
+++D=CBMCInDT	N=CBMC_PDIn	G=VAR_EXTERNAL
+++D=array[0..1] of byte	N=CBMCPDIn2	G=VAR_EXTERNAL
+++D=array[0..1] of byte	N=CBMCPDIn3	G=VAR_EXTERNAL
+++D=array[0..1] of byte	N=CBMCPDIn4	G=VAR_EXTERNAL
+++D=array[0..1] of byte	N=CBMCPDOut1	G=VAR_EXTERNAL
+++D=CBMCOutDT	N=CBMC_PDOut	G=VAR_EXTERNAL
+++D=array[0..1] of byte	N=CBMCPDOut2	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVROK	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVLOK	G=VAR_EXTERNAL
+++D=USINT	N=EC_NVWRITE	G=VAR_EXTERNAL
+++D=USINT	N=EC_A0_COMM	G=VAR_EXTERNAL
+++D=USINT	N=EC_A1_COMM	G=VAR_EXTERNAL
+++D=USINT	N=EC_A2_COMM	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestDriveInit	G=VAR_EXTERNAL
+++D=BOOL	N=TripCoil	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_ALM2	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_WARN	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVR_WARN	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_M0	Ord=2	G=VAR_EXTERNAL	AOE=1
+++D=BOOL	N=EC_BLVR_M0	Ord=3	G=VAR_EXTERNAL	AOE=1

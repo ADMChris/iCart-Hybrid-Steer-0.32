@@ -1,0 +1,127 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Derivative	G=VAR
+++D=REAL	N=Integral	G=VAR
+++D=REAL	N=Kp	R=1	IV=0.75	G=VAR
+++D=BOOL	N=MotionInhibit	G=VAR
+++D=REAL	N=Ki	R=1	IV=0.00135	G=VAR
+++D=REAL	N=Kd	R=1	IV=2	G=VAR
+++D=DINT	N=IntegralLimit	IV=10000	G=VAR
+++D=UINT	N=AccelRate	IV=50	G=VAR
+++D=REAL	N=ControlOutput	G=VAR
+++D=REAL	N=RampSpeedOut	G=VAR
+++D=REAL	N=RampSpeed_Prev	G=VAR
+++D=DINT	N=PositionError	G=VAR
+++D=DINT	N=PrevPositionError	G=VAR
+++D=REAL	N=InternalSpeed	G=VAR
+++D=BOOL	N=InPosition	G=VAR
+++D=REAL	N=CreepSpeed	IV=40	G=VAR
+++D=UINT	N=AccelToTime	G=VAR
+++D=UINT	N=DecelFromTime	G=VAR
+++D=UINT	N=CreepFromTime	G=VAR
+++D=UINT	N=LoopTime	G=VAR
+++D=DINT	N=DistanceToTarget	G=VAR
+++D=UDINT	N=TotalDist	G=VAR
+++D=UDINT	N=CreepDist	G=VAR
+++D=UDINT	N=CreepFromDist	G=VAR
+++D=UINT	N=AccelDuration	G=VAR
+++D=UINT	N=BrakeDuration	G=VAR
+++D=UDINT	N=AccelDist	G=VAR
+++D=UDINT	N=BrakeDist	G=VAR
+++D=UINT	N=DurationUntilDecel	G=VAR
+++D=UINT	N=DurationUntilCreep	G=VAR
+++D=UINT	N=DecelDuration	G=VAR
+++D=UINT	N=PlateauDuration	G=VAR
+++D=UDINT	N=CutoffThreshold	G=VAR
+++D=Array[0..14] OF BOOL	N=RisingEdge	G=VAR
+++D=Array[0..14] OF BOOL	N=FallingEdge	G=VAR
+++D=REAL	N=SensorCount	G=VAR
+++D=REAL	N=TempSensorPosition	G=VAR
+++D=INT	N=TempNoSensors	G=VAR
+++D=INT	N=MaxSensors	G=VAR
+++D=REAL	N=Error	G=VAR
+++D=REAL	N=SensorPosition	G=VAR
+++D=BOOL	N=TapeDetected	G=VAR
+++D=REAL	N=RightSpeedFactor	G=VAR
+++D=REAL	N=LeftSpeedFactor	G=VAR
+++D=Array[0..255] OF REAL	N=DelayLine	G=VAR
+++D=TrackingPID	N=TrackingPIDFB	G=VAR
+++D=USINT	N=IntTime	IV=10	G=VAR
+++D=REAL	N=CorneringFactor	R=1	IV=0.01	G=VAR
+++D=REAL	N=CorneringIntegral	G=VAR
+++D=USINT	N=CorneringTime	R=1	IV=100	G=VAR
+++D=REAL	N=Kcf	R=1	IV=0.005	G=VAR	Com=Cornering Constant
+++D=REAL	N=LeftSpeedReal	G=VAR
+++D=REAL	N=RightSpeedReal	G=VAR
+++D=INT	N=a	G=VAR
+++D=REAL	N=PrevTapePosition	G=VAR
+++D=REAL	N=Tolerance	G=VAR
+++D=REAL	N=NegTol	G=VAR
+++D=REAL	N=PosTol	G=VAR
+++D=REAL	N=InternalAccelTime	G=VAR
+++D=REAL	N=InternalCreepSpeed	G=VAR
+++D=REAL	N=PrevInternalSpeed	G=VAR
+++D=REAL	N=RateOfChange	G=VAR
+++D=REAL	N=RampSpeed	G=VAR
+++D=REAL	N=PrevRampSpeed	G=VAR
+++D=REAL	N=Kjst	IV=0.000714	G=VAR	Com=Joysick Steering Constant
+++D=REAL	N=JoystickAccel	IV=1	G=VAR	Com=Joystick Aceleration
+++D=REAL	N=Kjsp	IV=0.5	G=VAR	Com=Joystick Speed Constant
+++D=INT	N=RisingEdges	G=VAR
+++D=INT	N=FallingEdges	G=VAR
+++D=REAL	N=TestSpeed	IV=0	G=VAR
+++D=DINT	N=LeftSpeedOutPrev	G=VAR
+++D=DINT	N=ReightSpeedOutPrev	G=VAR
+++D=REAL	N=CorneringThreshold	R=1	G=VAR
+++D=GetTapeOffsetMacome	N=GetTapeOffsetFB	G=VAR
+++D=TrackingCornerDetect	N=TrackingCornerDetectFB	G=VAR
+++D=REAL	N=HMIJogSpeed	R=1	IV=250	G=VAR
+++D=REAL	N=HMIFastSpeed	R=1	IV=2000	G=VAR
+++D=INT	N=StoppingDecel	R=1	IV=75	G=VAR
+++D=TrackingAccel	N=TrackingAccelFB	G=VAR
+++D=INT	N=TrackingInterval	R=1	IV=5	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
+++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
+++D=BOOL	N=TrackingInProgress	G=VAR_EXTERNAL
+++D=BOOL	N=PauseAGV	G=VAR_EXTERNAL
+++D=StoredSpeeds	N=StoredSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=TrackingPositionRequestDone	G=VAR_EXTERNAL
+++D=BOOL	N=RunForward	G=VAR_EXTERNAL
+++D=BOOL	N=SSIUpdate	G=VAR_EXTERNAL
+++D=DINT	N=SSIPosition	G=VAR_EXTERNAL
+++D=DWORD	N=SSIStatus	G=VAR_EXTERNAL
+++D=Directions	N=AGVDirection	G=VAR_EXTERNAL
+++D=OM_Drive	N=BackCatch	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
+++D=INT	N=LeftSpeedOut	G=VAR_EXTERNAL
+++D=INT	N=RightSpeedOut	G=VAR_EXTERNAL
+++D=INT	N=JoystickSpeed	G=VAR_EXTERNAL
+++D=INT	N=JoystickSteer	G=VAR_EXTERNAL
+++D=BOOL	N=ManualOverride	G=VAR_EXTERNAL
+++D=BOOL	N=ManualReverse	G=VAR_EXTERNAL
+++D=WordBitUnion	N=Sensor	G=VAR_EXTERNAL
+++D=WORD	N=SensorInWord	G=VAR_EXTERNAL
+++D=BOOL	N=TrackLost	G=VAR_EXTERNAL
+++D=REAL	N=Speed	G=VAR_EXTERNAL
+++D=REAL	N=AccelSteps	G=VAR_EXTERNAL
+++D=BOOL	N=ForkDetected	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogFwd	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogRev	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogLeft	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogRight	G=VAR_EXTERNAL
+++D=REAL	N=TapePosition	G=VAR_EXTERNAL
+++D=REAL	N=ActualSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogFast	G=VAR_EXTERNAL
+++D=DriveData	N=Drive1	G=VAR_EXTERNAL
+++D=DriveData	N=Drive2	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_TRIGR	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_TRIG	G=VAR_EXTERNAL
+++D=UINT	N=EC_BLVL_CMD	G=VAR_EXTERNAL
+++D=DINT	N=EC_BLVL_DATA	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_ADRERR	G=VAR_EXTERNAL
+++D=BOOL	N=EC_BLVL_DATERR	G=VAR_EXTERNAL
+++D=BOOL	N=K1On	G=VAR_EXTERNAL
+++D=INT	N=TrackingCount	G=VAR_EXTERNAL

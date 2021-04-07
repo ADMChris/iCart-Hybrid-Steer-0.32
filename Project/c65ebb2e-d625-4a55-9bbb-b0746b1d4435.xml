@@ -1,0 +1,10 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>Integral := 0;&#xD;
+FOR i:=0 TO Ti BY 1 DO&#xD;
+	Integral := Integral + abs(DelayLine[i]);&#xD;
+END_FOR;&#xD;
+&#xD;
+IF Integral &lt; 10 THEN Integral := 10; END_IF;&#xD;
+&#xD;
+Integral := Integral - 10;&#xD;
+&#xD;
+Output := 1-(Integral * Ki);</Text></StructuredTextModel>

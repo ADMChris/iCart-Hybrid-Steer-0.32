@@ -1,0 +1,7 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>TempString := InStr;&#xD;
+FOR i:=0 TO 3 BY 1 DO&#xD;
+Length := LEN(TempString);&#xD;
+Offset := FIND(TempString,'.');&#xD;
+OutAry[i] := STRING_TO_BYTE(LEFT(TempString,Offset-1));&#xD;
+TempString := RIGHT(TempString,Length - Offset);&#xD;
+END_FOR;</Text></StructuredTextModel>

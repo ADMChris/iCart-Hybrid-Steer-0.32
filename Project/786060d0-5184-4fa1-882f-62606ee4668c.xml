@@ -1,0 +1,10 @@
+﻿{"CLs":[{"__type":"LD","Var":"Drive3Data.InCmd.Bit[3]"},{"__type":"ST","Ix":1,"Var":"HMIConvIsLTR","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Drive3Data.InCmd.Bit[4]"},{"__type":"ST","Ix":1,"Var":"HMIConvIsRTL","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"Drive3Data.InCmd.Bit[3]"},{"__type":"LD","Ix":1,"Not":true,"Var":"Drive3Data.InCmd.Bit[4]","X":1},{"__type":"ST","Ix":2,"Var":"HMIConvStopped","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"HMIConvStartLTR"},{"__type":"ST","Ix":1,"S":true,"Var":"Manual_LTR","X":1},{"__type":"ST","Ix":2,"RS":true,"Var":"AGVRunning","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"HMIConvStartRTL"},{"__type":"ST","Ix":1,"S":true,"Var":"Manual_RTL","X":1},{"__type":"ST","Ix":2,"RS":true,"Var":"AGVRunning","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Conveyor_LTR"},{"__type":"LD","Ix":1,"Var":"Conveyor_RTL","Y":1},{"__type":"LD","Ix":2,"Var":"StartPB","Y":2},{"__type":"LD","Ix":3,"Var":"EStopEngaged","Y":3},{"__type":"LD","Ix":4,"Var":"HMIConvStop","Y":4},{"__type":"ST","Ix":5,"RS":true,"Var":"Manual_RTL","X":1},{"__type":"ST","Ix":6,"RS":true,"Var":"Manual_LTR","X":2}],"LRI":7,"RRI":8,"VLs":[{"Ix":9,"X":1},{"Ix":9,"X":1,"Y":1},{"Ix":9,"X":1,"Y":2},{"Ix":9,"X":1,"Y":3}]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"LeftBoxSensor"},{"__type":"ST","Ix":1,"Var":"HMIConvLeftBox","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"RightBoxSensor"},{"__type":"ST","Ix":1,"Var":"HMIConvRightBox","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"LeftEdgeSensor"},{"__type":"ST","Ix":1,"Var":"HMIConvLeftEdge","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"RightEdgeSensor"},{"__type":"ST","Ix":1,"Var":"HMIConvRightEdge","X":1}],"LRI":2,"RRI":3,"VLs":[]}

@@ -1,0 +1,22 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF ABS(TargetSpeed) &lt;&gt; ABS(RampSpeed_Internal) THEN&#xD;
+	&#xD;
+	RampSpeed_Internal := RampSpeed_Prev + (TargetSpeed - RampSpeed_Prev) / AccelRate;&#xD;
+	&#xD;
+	// Deceleration - Cutoff&#xD;
+	IF ABS(RampSpeed_Internal) &lt; MinSpeed &#xD;
+	THEN&#xD;
+		RampSpeed := 0; &#xD;
+	&#xD;
+	// Acceleration - Clamp&#xD;
+	ELSIF ABS(RampSpeed) &lt; ABS(TargetSpeed) &#xD;
+	AND   ABS(RampSpeed) &gt; ABS(TargetSpeed) - MinSpeed&#xD;
+	AND   TargetSpeed &lt;&gt; 0&#xD;
+	THEN&#xD;
+		RampSpeed := TargetSpeed; &#xD;
+	&#xD;
+	ELSE&#xD;
+		RampSpeed := RampSpeed_Internal;&#xD;
+	END_IF;&#xD;
+	&#xD;
+END_IF;&#xD;
+RampSpeed_Prev := RampSpeed_Internal;</Text></StructuredTextModel>
