@@ -27,7 +27,7 @@
         <AccessInfos />
         <ChildEntities />
       </Entity>
-      <Entity type="Device" subtype="NJ501" id="2783ca9e-94c3-4eaf-83bd-9420a25ec05f" name="iTruck_1" version="0" dateCreated="12/04/2017 10:25:03" dateLastModified="03/23/2020 12:27:39" trackingId="d3f1a3fa-1f9f-403b-84c5-dff9a18a38eb" DN="iShuttle" hash="10db2375d7f23fe5bf90fa237f18928e" DHS="48029d418605b74a6fa977ca70787dd5" TH="fb782cbe29195665f1d99db44f8e81eb">
+      <Entity type="Device" subtype="NJ501" id="2783ca9e-94c3-4eaf-83bd-9420a25ec05f" name="iTruck_1" version="0" dateCreated="12/04/2017 10:25:03" dateLastModified="03/23/2020 12:27:39" trackingId="d3f1a3fa-1f9f-403b-84c5-dff9a18a38eb" DN="iShuttle" hash="10db2375d7f23fe5bf90fa237f18928e" DHS="328580ef726d766a1c6ba78224d179e7" TH="94192751e7462fbd95709c08abb36e81">
         <AccessInfos />
         <ChildEntities>
           <Entity type="Watch" subtype="" id="30160bde-7ef8-406f-9ee0-9b1013ea9fdd" name="Watch" version="0" dateCreated="12/04/2017 10:25:03" trackingId="b01bd4cd-dc6b-4657-b2c9-190aea86f2ae">
@@ -38,7 +38,7 @@
             <AccessInfos />
             <ChildEntities />
           </Entity>
-          <Entity type="NexEcatConfiguration" subtype="EcatConfigurationSubstance" id="6285a8bf-6a45-427d-b4ea-dad754189d5d" name="EtherCAT" version="0" dateCreated="12/04/2017 10:25:03" dateLastModified="03/23/2020 12:27:39" trackingId="3bae296c-e5bf-4a99-96db-a110374eb102" DN="EtherCAT Network Configuration and Unit Operation Settings" SDName="EtherCAT Configuration" hash="138a299e278feef0ae87b844c68de722">
+          <Entity type="NexEcatConfiguration" subtype="EcatConfigurationSubstance" id="6285a8bf-6a45-427d-b4ea-dad754189d5d" name="EtherCAT" version="0" dateCreated="12/04/2017 10:25:03" dateLastModified="04/07/2021 11:15:42" trackingId="3bae296c-e5bf-4a99-96db-a110374eb102" DN="EtherCAT Network Configuration and Unit Operation Settings" SDName="EtherCAT Configuration" hash="7e2360e50b6c91543cc71897a61a9489">
             <AccessInfos />
             <ChildEntities />
           </Entity>
@@ -46,6 +46,10 @@
             <AccessInfos />
             <ChildEntities>
               <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="5e7790cf-15a7-4053-86f0-eebee3aca8a0" name="N/A0" version="0" dateCreated="03/23/2020 12:26:41" dateLastModified="03/23/2020 12:27:39" trackingId="05a4a129-62ae-4d8f-b562-3ef04620a19f" DN="Node1 : NETC01-ECT (E001)" hash="fecc7351d980e4fc63f608f60ffa4d3c">
+                <AccessInfos />
+                <ChildEntities />
+              </Entity>
+              <Entity type="NexEcatConfiguration" subtype="SlaveProxy" id="b4234981-f2ba-402a-9542-47c001aefe8c" name="N/A1" version="0" dateCreated="04/07/2021 11:08:20" dateLastModified="04/07/2021 11:15:42" trackingId="79656629-632f-4345-be9c-7c4fc766c876" DN="Node2 : AZD-KED (E002)" hash="27a25527bcdedefd18a73f30fd07f353">
                 <AccessInfos />
                 <ChildEntities />
               </Entity>
@@ -215,7 +219,7 @@
             <AccessInfos />
             <ChildEntities />
           </Entity>
-          <Entity type="TaskConfiguration" subtype="" id="a2ceb14d-255f-45ab-9368-13226d9d8092" name="Task Settings" version="0" dateCreated="12/04/2017 10:25:04" dateLastModified="11/23/2020 11:06:37" trackingId="5bc58f3e-6149-4647-85bc-d1be8a433583" DN="Task Settings">
+          <Entity type="TaskConfiguration" subtype="" id="a2ceb14d-255f-45ab-9368-13226d9d8092" name="Task Settings" version="0" dateCreated="12/04/2017 10:25:04" dateLastModified="04/07/2021 11:15:42" trackingId="5bc58f3e-6149-4647-85bc-d1be8a433583" DN="Task Settings">
             <AccessInfos />
             <ChildEntities />
           </Entity>
@@ -262,7 +266,7 @@
               </Entity>
             </ChildEntities>
           </Entity>
-          <Entity type="SourceCompareId" subtype="Configuration" id="26f7f9af-257d-41b2-8d51-c81765cca396" name="Comparison ID for Configurations and Setup0" version="0" dateCreated="02/20/2018 15:31:52" dateLastModified="11/23/2020 11:06:37" trackingId="603ebc89-58cb-48a2-bc7c-c4b4114983fc" SDName="Comparison ID for Configurations and Setup" hash="86b4c7ac50df336a2e9f26838878acae">
+          <Entity type="SourceCompareId" subtype="Configuration" id="26f7f9af-257d-41b2-8d51-c81765cca396" name="Comparison ID for Configurations and Setup0" version="0" dateCreated="02/20/2018 15:31:52" dateLastModified="04/07/2021 11:15:42" trackingId="603ebc89-58cb-48a2-bc7c-c4b4114983fc" SDName="Comparison ID for Configurations and Setup" hash="e2922dd361c6a474df6210c64ea01631">
             <AccessInfos />
             <ChildEntities />
           </Entity>
@@ -815,6 +819,37 @@
                       </Entity>
                     </ChildEntities>
                   </Entity>
+                  <Entity type="Program" subtype="MultipartLadder" id="78b9c491-ffc6-4bbd-bfc5-4c6338c0f245" name="SteerDrive" version="0" dateCreated="04/07/2021 11:11:34" dateLastModified="04/07/2021 11:15:42" author="ADM VM" trackingId="1a639e42-b6d9-4baf-bbc4-b46edd515d14" DN="SteerDrive">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="DebugProgramSetting" subtype="" id="63a4b664-458d-417e-bc54-8878ae25031a" name="DebugProgramSetting0.00" version="0" dateCreated="04/07/2021 11:11:34" dateLastModified="04/07/2021 11:15:42" trackingId="b4934c26-e164-4c80-aae0-1d84732dda74" hash="1ba7c2b4868fa6051083bbf3011b231b">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                      <Entity type="Variables" subtype="Ladder" id="5125cf08-b20e-4f88-bbec-a6b75f590535" name="Variables" version="0" dateCreated="04/07/2021 11:11:34" dateLastModified="04/07/2021 11:15:42" trackingId="efc9eefa-a4c8-4663-bab9-1f1568443fb6" hash="0c457a3d9806ce640578c2befef57e9d">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="e3167b37-193a-4762-a525-8534e902275e" name="Source" version="0" dateCreated="04/07/2021 11:11:34" trackingId="346cb620-ef48-44d5-875b-ef7815ccd0e2">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="421a647a-9cfa-46af-af4a-7c9062b193fd" name="StatusWord" version="0" dateCreated="04/07/2021 11:11:34" dateLastModified="04/07/2021 11:15:42" trackingId="04d1248f-9166-4039-9260-df95b660dc39" DN="StatusWord" hash="9f4a328e4b6924703e067dc54a3c9e81">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="fafde4b1-6125-48a7-9e7f-38b8a9b8f1e5" name="Source" version="0" dateCreated="04/07/2021 11:11:34" trackingId="4d7ce4a0-13eb-434f-8e7b-22606b154038">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="d0f7871f-c7b3-4520-9ad0-19edf0ea041a" name="PouBodySourceHolder" version="0" dateCreated="04/07/2021 11:11:34" trackingId="b5f4adcc-4cba-47e0-849f-e89e4a0f3dc9">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
                 </ChildEntities>
               </Entity>
               <Entity type="Group" subtype="IecFunctions" id="482cc709-e53e-44d4-9c3e-2c3952420031" name="Functions" version="0" dateCreated="12/04/2017 10:25:04" trackingId="ef32be05-19e1-40b6-86bc-125894f3ee20" DN="Functions">
@@ -995,7 +1030,7 @@
                   </Entity>
                 </ChildEntities>
               </Entity>
-              <Entity type="Variables" subtype="Global" id="d0eb77d0-1a8d-44b6-8631-d8f463bd0a22" name="Global Variables" version="0" dateCreated="11/30/2017 09:18:38" dateLastModified="11/23/2020 11:06:37" trackingId="df3ad832-0d40-4d6b-8778-e0db17b216ed" DN="Global Variables" hash="7743a06ad59b99a2f322141d1efacf2c">
+              <Entity type="Variables" subtype="Global" id="d0eb77d0-1a8d-44b6-8631-d8f463bd0a22" name="Global Variables" version="0" dateCreated="11/30/2017 09:18:38" dateLastModified="04/07/2021 11:15:42" trackingId="df3ad832-0d40-4d6b-8778-e0db17b216ed" DN="Global Variables" hash="c3010167834c49d932b61f81435a85b1">
                 <AccessInfos />
                 <ChildEntities>
                   <Entity type="SourceHolder" subtype="" id="2c666d21-64dd-45e1-a9ff-78d0f550c1cc" name="Source" version="0" dateCreated="12/04/2017 10:27:12" trackingId="0f25ce41-a2c0-4f07-8ea6-fa341bec76e2">
@@ -1013,7 +1048,7 @@
           <Entity type="Group" subtype="NexIecTasks" id="952b2de0-1ba1-4c15-96b7-9f1a68264722" name="Tasks" version="0" dateCreated="12/04/2017 10:25:04" dateLastModified="10/16/2018 13:46:03" trackingId="7fc679bd-4803-47aa-a59f-bdb990f48657" DN="Tasks">
             <AccessInfos />
             <ChildEntities>
-              <Entity type="NexTask" subtype="Base" id="92fa8143-daa3-45c4-9489-76ffbd670a74" name="PrimaryTask" version="0" dateCreated="12/04/2017 10:27:12" dateLastModified="11/23/2020 11:06:37" trackingId="f3f4ce13-e34e-4ec7-83fd-8657adb1afec" DN="PrimaryTask" hash="d49f6f3678be43cfa8e32544d6225977">
+              <Entity type="NexTask" subtype="Base" id="92fa8143-daa3-45c4-9489-76ffbd670a74" name="PrimaryTask" version="0" dateCreated="12/04/2017 10:27:12" dateLastModified="04/07/2021 11:15:42" trackingId="f3f4ce13-e34e-4ec7-83fd-8657adb1afec" DN="PrimaryTask" hash="803584bb2df2b4a8a03b5caad9c36722">
                 <AccessInfos />
                 <ChildEntities>
                   <Entity type="NexAssociatedProgram" subtype="MultipartLadder" id="254cec47-2e40-4b2a-9394-2a452742ba76" name="Main" version="0" dateCreated="12/07/2017 15:53:36" dateLastModified="03/23/2020 12:27:39" trackingId="949939f3-4bf7-4804-85d7-616d79fc6b3f" DN="Main" hash="9ed975bb298dbc20eab46ee423f2b7e3">
