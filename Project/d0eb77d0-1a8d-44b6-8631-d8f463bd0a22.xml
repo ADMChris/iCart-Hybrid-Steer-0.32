@@ -358,3 +358,4 @@ _EN=Variables
 ++D=INT	N=AZD_ActCurrent	AT=ECAT://node#2/Transmit PDO mapping 1_CST operating current_4092_00	G=VAR_GLOBAL
 ++D=DINT	N=AZD_ActPos	AT=ECAT://node#2/Transmit PDO mapping 1_Position actual value_6064_00	G=VAR_GLOBAL
 ++D=SINT	N=AZD_ActOpmode	AT=ECAT://node#2/Transmit PDO mapping 1_Modes of operation display_6061_00	G=VAR_GLOBAL
+++D=REAL	N=Tracking_ControlOutput	G=VAR_GLOBAL
