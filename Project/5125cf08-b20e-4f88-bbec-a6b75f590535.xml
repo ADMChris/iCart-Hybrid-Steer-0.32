@@ -10,7 +10,7 @@ _EN=Variables
 ++D=BOOL	N=AZD_SW_SOD	G=VAR	Com=Switch On Disabled
 ++D=BOOL	N=AZD_SW_Warn	G=VAR	Com=Warning
 ++D=BOOL	N=AZD_SW_ms	G=VAR
-++D=BOOL	N=AZD_SW_Remote	G=VAR	Com=Remote
+++D=BOOL	N=AZD_SW_Remote	G=VAR	Com=Drive Initialised
 ++D=BOOL	N=AZD_SW_TR	G=VAR	Com=Target Reached
 ++D=BOOL	N=AZD_SW_IL	G=VAR	Com=Internal Limit Active
 ++D=BOOL	N=AZD_SW_OMS1	G=VAR	Com=PP = SetPtAck
@@ -20,7 +20,7 @@ _EN=Variables
 ++D=WORD	N=CW_Word	G=VAR
 ++D=BOOL	N=AZD_CW_SO	G=VAR	Com=Switch On
 ++D=BOOL	N=AZD_CW_EV	G=VAR	Com=Enable Voltage
-++D=BOOL	N=AZD_CW_QS	G=VAR	Com=Quick Stop
+++D=BOOL	N=AZD_CW_QS	G=VAR	Com=Quick Stop (active low)
 ++D=BOOL	N=AZD_CW_EO	G=VAR	Com=Enable Operation
 ++D=BOOL	N=AZD_CW_OMS1	G=VAR
 ++D=BOOL	N=AZD_CW_OMS2	G=VAR
@@ -43,6 +43,9 @@ _EN=Variables
 ++D=REAL	N=StepperSpeed	G=VAR
 ++D=REAL	N=StepperScale	R=1	G=VAR
 ++D=DINT	N=PrevSetVel	G=VAR
+++D=INT	N=InsideWheelTorque	R=1	IV=30	G=VAR
+++D=INT	N=OutsideWheelTorque	R=1	IV=200	G=VAR
+++D=BOOL	N=SteerDriveInhibit	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
@@ -57,3 +60,5 @@ _EN=Variables
 ++D=BOOL	N=StartPB	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_SetVel	G=VAR_EXTERNAL
 ++D=BOOL	N=SteerDriveEnable	G=VAR_EXTERNAL
+++D=DriveData	N=Drive1	G=VAR_EXTERNAL
+++D=DriveData	N=Drive2	G=VAR_EXTERNAL

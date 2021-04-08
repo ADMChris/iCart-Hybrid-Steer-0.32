@@ -343,12 +343,12 @@ _EN=Variables
 ++D=BOOL	N=TagRequestDriveInit	G=VAR_GLOBAL
 ++D=INT	N=TrackingCount	G=VAR_GLOBAL
 ++D=UINT	N=AZD_ControlWord	AT=ECAT://node#2/Receive PDO mapping 1_Controlword_6040_00	G=VAR_GLOBAL
-++D=UDINT	N=AZD_SetAccel	AT=ECAT://node#2/Receive PDO mapping 1_Profile acceleration_6083_00	G=VAR_GLOBAL
-++D=UDINT	N=AZD_SetDecel	AT=ECAT://node#2/Receive PDO mapping 1_Profile deceleration_6084_00	G=VAR_GLOBAL
-++D=DINT	N=AZD_SetVel	AT=ECAT://node#2/Receive PDO mapping 1_Target velocity_60FF_00	G=VAR_GLOBAL
-++D=INT	N=AZD_SetCurrent	AT=ECAT://node#2/Receive PDO mapping 1_Operating current_4120_00	G=VAR_GLOBAL
+++D=UDINT	N=AZD_SetAccel	AT=ECAT://node#2/Receive PDO mapping 1_Profile acceleration_6083_00	IV=300000	G=VAR_GLOBAL
+++D=UDINT	N=AZD_SetDecel	AT=ECAT://node#2/Receive PDO mapping 1_Profile deceleration_6084_00	IV=300000	G=VAR_GLOBAL
+++D=DINT	N=AZD_SetVel	AT=ECAT://node#2/Receive PDO mapping 1_Target velocity_60FF_00	IV=20000	G=VAR_GLOBAL
+++D=INT	N=AZD_SetCurrent	AT=ECAT://node#2/Receive PDO mapping 1_Operating current_4120_00	IV=1000	G=VAR_GLOBAL
 ++D=DINT	N=TEstD	G=VAR_GLOBAL
-++D=SINT	N=AZD_SetOpMode	AT=ECAT://node#2/Receive PDO mapping 1_Modes of operation_6060_00	G=VAR_GLOBAL
+++D=SINT	N=AZD_SetOpMode	AT=ECAT://node#2/Receive PDO mapping 1_Modes of operation_6060_00	IV=1	G=VAR_GLOBAL
 ++D=UINT	N=AZD_StatusWord	AT=ECAT://node#2/Transmit PDO mapping 1_Statusword_6041_00	G=VAR_GLOBAL
 ++D=INT	N=AZD_ActTorque	AT=ECAT://node#2/Transmit PDO mapping 1_Torque monitor_406B_00	G=VAR_GLOBAL
 ++D=DINT	N=AZD_ActSpeed	AT=ECAT://node#2/Transmit PDO mapping 1_Actual speed[r/min]_4067_00	G=VAR_GLOBAL
