@@ -45,7 +45,11 @@ _EN=Variables
 ++D=DINT	N=PrevSetVel	G=VAR
 ++D=INT	N=InsideWheelTorque	R=1	IV=30	G=VAR
 ++D=INT	N=OutsideWheelTorque	R=1	IV=200	G=VAR
-++D=BOOL	N=SteerDriveInhibit	G=VAR
+++D=BOOL	N=SteerDriveInhibit	R=1	G=VAR
+++D=DINT	N=LeftDiffThreshold	R=1	IV=-1000	G=VAR
+++D=DINT	N=RightDiffThreshold	R=1	IV=1000	G=VAR
+++D=DINT	N=LeftCenterDiffThreshold	R=1	IV=-500	G=VAR
+++D=DINT	N=RightCenterDiffThreshold	R=1	IV=500	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
@@ -62,3 +66,4 @@ _EN=Variables
 ++D=BOOL	N=SteerDriveEnable	G=VAR_EXTERNAL
 ++D=DriveData	N=Drive1	G=VAR_EXTERNAL
 ++D=DriveData	N=Drive2	G=VAR_EXTERNAL
+++D=DINT	N=AZD_ActPos	G=VAR_EXTERNAL
