@@ -50,6 +50,8 @@ _EN=Variables
 ++D=DINT	N=RightDiffThreshold	R=1	IV=1000	G=VAR
 ++D=DINT	N=LeftCenterDiffThreshold	R=1	IV=-500	G=VAR
 ++D=DINT	N=RightCenterDiffThreshold	R=1	IV=500	G=VAR
+++D=TIME	N=SDTim	Ord=1	G=VAR	AOE=1
+++D=TON	N=sdtimer	Ord=2	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
