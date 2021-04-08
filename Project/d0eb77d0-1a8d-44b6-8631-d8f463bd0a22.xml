@@ -364,3 +364,4 @@ _EN=Variables
 ++D=BOOL	N=AZD_SW_OE	G=VAR_GLOBAL	Com=Operation Enabled
 ++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
 ++D=BOOL	N=SteerDriveEnable	G=VAR_GLOBAL
+++D=BOOL	N=AGVStopped	G=VAR_GLOBAL

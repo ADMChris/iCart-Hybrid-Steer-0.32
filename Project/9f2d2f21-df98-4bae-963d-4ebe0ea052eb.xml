@@ -127,7 +127,6 @@ _EN=Variables
 ++D=BOOL	N=TransferBusy	G=VAR
 ++D=BOOL	N=TagRequestLeftLoad	G=VAR
 ++D=TON	N=AGVStoppedTimer	G=VAR
-++D=BOOL	N=AGVStopped	G=VAR	Com=AGV at standstill
 ++D=WordBitUnion	N=ScanStatus	G=VAR
 ++D=WordBitUnion	N=RFIDStatus	G=VAR
 ++D=STRING[8]	N=CurrentTagString	G=VAR
@@ -433,3 +432,4 @@ _EN=Variables
 ++D=BOOL	N=SteerDriveEnable	G=VAR_EXTERNAL
 ++D=BOOL	N=EC_BLVL_M2	G=VAR_EXTERNAL
 ++D=BOOL	N=EC_BLVR_M2	G=VAR_EXTERNAL
+++D=BOOL	N=AGVStopped	G=VAR_EXTERNAL
