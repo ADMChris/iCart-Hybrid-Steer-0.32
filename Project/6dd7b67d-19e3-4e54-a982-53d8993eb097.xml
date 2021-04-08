@@ -1,3 +1,4 @@
-﻿{"CLs":[{"__type":"LD","Not":true,"Var":"EStopEngaged"},{"__type":"ST","Ix":1,"Var":"CW_QS","X":1},{"__type":"ST","Ix":2,"Var":"CW_EV","X":2}],"LRI":3,"RRI":4,"VLs":[]}
-{"CLs":[{"__type":"LD","Var":"SW_RTSO"},{"__type":"ST","Ix":1,"Var":"CW_SO","X":1}],"LRI":2,"RRI":3,"VLs":[]}
-{"CLs":[{"__type":"LD","Var":"SW_SO"},{"__type":"ST","Ix":1,"Var":"CW_EO","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+﻿{"CLs":[{"__type":"LD","Var":"EStopEngaged"},{"__type":"ST","Ix":1,"Var":"AZD_CW_QS","X":1},{"__type":"ST","Ix":2,"Var":"AZD_CW_EV","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AZD_SW_RTSO"},{"__type":"ST","Ix":1,"Var":"AZD_CW_SO","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"AZD_SW_SO"},{"__type":"ST","Ix":1,"Var":"AZD_CW_EO","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"StartPB"},{"__type":"ST","Ix":1,"Var":"AZD_CW_FR","X":1}],"LRI":2,"RRI":3,"VLs":[]}

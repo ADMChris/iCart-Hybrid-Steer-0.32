@@ -1,0 +1,7 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF AZD_SW_OE = TRUE THEN&#xD;
+	AZD_SetOpMode := 1;&#xD;
+END_IF;&#xD;
+&#xD;
+	&#xD;
+	&#xD;
+</Text></StructuredTextModel>

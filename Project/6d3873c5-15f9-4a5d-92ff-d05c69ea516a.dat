@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Module VenderID="1" ProductCode="7799808" Revision="16777216" IONodeID="02518822-31b9-4dd0-a272-493f773e990e" DeviceName="N1" SerialNo="0" IsEnabled="1">
+<Module VenderID="1" ProductCode="7799808" Revision="16842752" IONodeID="02518822-31b9-4dd0-a272-493f773e990e" DeviceName="N1" SerialNo="0" IsEnabled="1">
   <Parameter Index="20481" SubIndex="1" Value="1" />
   <Parameter Index="20481" SubIndex="2" Value="0" />
   <Parameter Index="20481" SubIndex="3" Value="0" />
@@ -77,6 +77,14 @@
   <Parameter Index="20493" SubIndex="9" Value="0" />
   <Parameter Index="20493" SubIndex="10" Value="0" />
   <Parameter Index="20505" SubIndex="1" Value="3" />
+  <Parameter Index="20506" SubIndex="1" Value="0" />
+  <Parameter Index="20506" SubIndex="2" Value="0" />
+  <Parameter Index="20506" SubIndex="3" Value="0" />
+  <Parameter Index="20506" SubIndex="4" Value="0" />
+  <Parameter Index="20507" SubIndex="1" Value="0" />
+  <Parameter Index="20507" SubIndex="2" Value="0" />
+  <Parameter Index="20507" SubIndex="3" Value="0" />
+  <Parameter Index="20507" SubIndex="4" Value="0" />
   <IOPort IOPortID="5564b05b-f2b9-45ce-84f7-36c928d62535" Index="28673" SubIndex="1" />
   <IOPort IOPortID="6114129a-5f77-46f7-bf09-13690aa259e0" Index="28673" SubIndex="2" />
   <IOPort IOPortID="91405eeb-4c95-4333-8061-527f1958bea5" Index="28673" SubIndex="3" />

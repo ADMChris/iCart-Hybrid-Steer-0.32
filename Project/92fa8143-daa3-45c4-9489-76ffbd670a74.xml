@@ -15,6 +15,7 @@
     <AssociatedProgramData ProgramName="Drive3" InstanceName="Drive3" IniFileTrackingId="414ebe80d32b439283e8324506ea3a84" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="Drive1CMD" InstanceName="Drive1CMD" IniFileTrackingId="e96ef2a88c544b3681034741216deb3b" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="Drive2CMD" InstanceName="Drive2CMD" IniFileTrackingId="5491e30411404c2496f6481588c55d51" StartupSetting="TRUE" SequenceNumber="7" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="SteerDrive" InstanceName="SteerDrive" IniFileTrackingId="1a639e42b6d94bafbbc4b46edd515d14" StartupSetting="TRUE" SequenceNumber="8" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="95479be3-1260-4ea7-88f9-dbd119025417" />
@@ -23,7 +24,6 @@
     <RefreshUnitId RefreshUnitId="3503fa19-bc75-4c5f-8bda-087af52e66ef" />
     <RefreshUnitId RefreshUnitId="cfb2d1b1-aeff-4aef-a2e6-358b285fd184" />
     <RefreshUnitId RefreshUnitId="21311d1b-2899-447a-869d-e68a81933d2b" />
-    <RefreshUnitId RefreshUnitId="1874514a-175c-4198-927a-9bc1b8ab6f6c" />
     <RefreshUnitId RefreshUnitId="3fa257b1-ca2e-439d-a285-e48ec3b7ae50" />
   </RefreshUnitIds>
   <TaskInterfaceVariables version="1" />

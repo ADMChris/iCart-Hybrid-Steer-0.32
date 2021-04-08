@@ -25,11 +25,5 @@
     <DirectIOPort IOPortID="5c2a5132-7f00-430c-9bd8-0dd87bb5122b" UnitNumber="4" RelativeAtPath="status/error" />
     <DirectIOPort IOPortID="db0aba3e-a14d-4cdb-a9c6-9acdf5951765" UnitNumber="4" RelativeAtPath="status/synctime:in" />
     <DirectIOPort IOPortID="c3dc7047-88f4-465b-8bf7-5b09feda4684" UnitNumber="4" RelativeAtPath="status/synctime:out" />
-    <DirectIOPort IOPortID="f81306bc-8949-461d-ab30-5eb6cb183d21" UnitNumber="5" RelativeAtPath="status/registration" />
-    <DirectIOPort IOPortID="0c9fcbcb-6fe5-4f93-b533-8314059ad674" UnitNumber="5" RelativeAtPath="status/msg:enabled" />
-    <DirectIOPort IOPortID="5f333e2a-70c9-483c-ab80-a3e155f4776f" UnitNumber="5" RelativeAtPath="status/io:active" />
-    <DirectIOPort IOPortID="b3b58124-9479-4653-96d6-03f43e2aaf62" UnitNumber="5" RelativeAtPath="status/error" />
-    <DirectIOPort IOPortID="0977f990-0bd5-48c2-9168-186522d6aae8" UnitNumber="5" RelativeAtPath="status/synctime:in" />
-    <DirectIOPort IOPortID="e401c4e3-03f4-41b4-92bf-c6bd501b3aef" UnitNumber="5" RelativeAtPath="status/synctime:out" />
   </CpuRackNXBusMaster>
 </CpuRackNXBusMaster>

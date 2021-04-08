@@ -1,0 +1,7 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=SINT	N=AZD_SetOpMode	G=VAR_EXTERNAL
+++D=BOOL	N=AZD_SW_OE	G=VAR_EXTERNAL

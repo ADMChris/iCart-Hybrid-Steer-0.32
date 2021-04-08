@@ -64,7 +64,7 @@ _EN=Variables
 ++D=BOOL	N=TrackingInProgress	G=VAR_GLOBAL
 ++D=UINT	N=InterUpdateCounter	G=VAR_GLOBAL
 ++D=UDINT	N=TargetPosition	IV=30000	G=VAR_GLOBAL
-++D=INT	N=LeftSpeedOut	AT=IOBus://unit#5/Ch1 Analog Output Value	G=VAR_GLOBAL
+++D=INT	N=LeftSpeedOut	G=VAR_GLOBAL
 ++D=BOOL	N=PauseAGV	G=VAR_GLOBAL
 ++D=UINT	N=CommandFromSupervisor	NTP=PublicationInput	G=VAR_GLOBAL
 ++D=UINT	N=YorkCount	R=1	G=VAR_GLOBAL
@@ -132,7 +132,7 @@ _EN=Variables
 ++D=BOOL	N=AGVStarted	G=VAR_GLOBAL
 ++D=BOOL	N=AGVSleep	G=VAR_GLOBAL
 ++D=BOOL	N=ScanRedZone	AT=BuiltInIO://cpu/#0/Input_Bit_06	G=VAR_GLOBAL
-++D=INT	N=RightSpeedOut	AT=IOBus://unit#5/Ch2 Analog Output Value	G=VAR_GLOBAL
+++D=INT	N=RightSpeedOut	G=VAR_GLOBAL
 ++D=INT	N=JoystickSpeed	G=VAR_GLOBAL
 ++D=INT	N=JoystickSteer	G=VAR_GLOBAL
 ++D=BOOL	N=AudibleBeacon	AT=BuiltInIO://cpu/#0/Output_Bit_03	G=VAR_GLOBAL
@@ -347,7 +347,7 @@ _EN=Variables
 ++D=UDINT	N=AZD_SetDecel	AT=ECAT://node#2/Receive PDO mapping 1_Profile deceleration_6084_00	G=VAR_GLOBAL
 ++D=DINT	N=AZD_SetVel	AT=ECAT://node#2/Receive PDO mapping 1_Target velocity_60FF_00	G=VAR_GLOBAL
 ++D=INT	N=AZD_SetCurrent	AT=ECAT://node#2/Receive PDO mapping 1_Operating current_4120_00	G=VAR_GLOBAL
-++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
+++D=DINT	N=TEstD	G=VAR_GLOBAL
 ++D=SINT	N=AZD_SetOpMode	AT=ECAT://node#2/Receive PDO mapping 1_Modes of operation_6060_00	G=VAR_GLOBAL
 ++D=UINT	N=AZD_StatusWord	AT=ECAT://node#2/Transmit PDO mapping 1_Statusword_6041_00	G=VAR_GLOBAL
 ++D=INT	N=AZD_ActTorque	AT=ECAT://node#2/Transmit PDO mapping 1_Torque monitor_406B_00	G=VAR_GLOBAL
@@ -359,3 +359,8 @@ _EN=Variables
 ++D=DINT	N=AZD_ActPos	AT=ECAT://node#2/Transmit PDO mapping 1_Position actual value_6064_00	G=VAR_GLOBAL
 ++D=SINT	N=AZD_ActOpmode	AT=ECAT://node#2/Transmit PDO mapping 1_Modes of operation display_6061_00	G=VAR_GLOBAL
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_GLOBAL
+++D=INT	N=Steering_LeftPos	IV=-25000	G=VAR_GLOBAL
+++D=INT	N=Steering_RightPos	IV=25000	G=VAR_GLOBAL
+++D=BOOL	N=AZD_SW_OE	G=VAR_GLOBAL	Com=Operation Enabled
+++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
+++D=BOOL	N=SteerDriveEnable	G=VAR_GLOBAL

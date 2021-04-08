@@ -1,0 +1,8 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF P_On AND AZD_SW_OE THEN&#xD;
+	&#xD;
+	AZD_SetVel := 10000;&#xD;
+	AZD_SetAccel := 200000;&#xD;
+	AZD_SetDecel := 200000;&#xD;
+	AZD_SetCurrent := 1000;&#xD;
+	&#xD;
+END_IF;</Text></StructuredTextModel>
