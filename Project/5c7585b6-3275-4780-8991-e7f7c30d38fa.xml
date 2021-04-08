@@ -251,4 +251,17 @@ END_IF;&#xD;
 Drive1.Speed := LeftSpeedOut;&#xD;
 Drive2.Speed := RightSpeedOut;&#xD;
 &#xD;
-ActualSpeed := TestSpeed + (RightSpeedReal + LeftSpeedReal);</Text></StructuredTextModel>
+ActualSpeed := TestSpeed + (RightSpeedReal + LeftSpeedReal);&#xD;
+&#xD;
+//IF PauseAGV THEN&#xD;
+	//Tracking_ControlOutput:=0.2;&#xD;
+	//AZD_SetPos:=0;&#xD;
+//END_IF;&#xD;
+&#xD;
+//IF ScanWarnHigh AND AGVStopped OR PauseAGV THEN&#xD;
+	//AZD_SetPos := ;&#xD;
+//ELSIF AGVStopped OR PauseAGV THEN&#xD;
+	&#xD;
+	&#xD;
+&#xD;
+</Text></StructuredTextModel>

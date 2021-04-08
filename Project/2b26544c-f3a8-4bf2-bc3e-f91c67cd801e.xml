@@ -13,8 +13,8 @@
     <NumSamplingRecords>10000</NumSamplingRecords>
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/EC_BLVL_MOVE%3ABOOL</SymbolId>
-      <SymbolName>EC_BLVL_MOVE</SymbolName>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Sensor.Bit[14]%3ABOOL</SymbolId>
+      <SymbolName>Sensor.bit[14]</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>

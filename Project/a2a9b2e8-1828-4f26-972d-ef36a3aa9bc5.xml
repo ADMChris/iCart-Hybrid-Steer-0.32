@@ -3,17 +3,17 @@
   <DataTraceSetModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>TrackingCount</Name>
+      <Name>TapePosition</Name>
       <Id>b470d84c-28ae-4549-a4d9-2c5486fc1433</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/TrackingCount%3AINT</SymbolId>
-      <NaturalDataType>INT</NaturalDataType>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/TapePosition%3AREAL</SymbolId>
+      <NaturalDataType>REAL</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
       <ColourR>255</ColourR>
       <ColourG>127</ColourG>
       <ColourB>80</ColourB>
       <Historical>false</Historical>
-      <DataType>System.Int16</DataType>
+      <DataType>System.Single</DataType>
       <Id>b470d84c-28ae-4549-a4d9-2c5486fc1433</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
@@ -22,17 +22,17 @@
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>Drive1.Speed</Name>
+      <Name>Tracking_ControlOutput</Name>
       <Id>cf83b20e-c829-47d1-8ff1-99b98b053a49</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Drive1.Speed%3ADINT</SymbolId>
-      <NaturalDataType>DINT</NaturalDataType>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Tracking_ControlOutput%3AREAL</SymbolId>
+      <NaturalDataType>REAL</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
       <ColourR>255</ColourR>
       <ColourG>215</ColourG>
       <ColourB>0</ColourB>
       <Historical>false</Historical>
-      <DataType>System.Int32</DataType>
+      <DataType>System.Single</DataType>
       <Id>cf83b20e-c829-47d1-8ff1-99b98b053a49</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
@@ -41,9 +41,9 @@
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>Drive1.PrevSpeed</Name>
+      <Name>AZD_SetPos</Name>
       <Id>935e0702-5b33-4c58-94c2-50fd29d62f76</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Drive1.PrevSpeed%3ADINT</SymbolId>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/AZD_SetPos%3ADINT</SymbolId>
       <NaturalDataType>DINT</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
@@ -60,17 +60,17 @@
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>HMIJogFwd</Name>
+      <Name>AZD_ActPosSetpoint</Name>
       <Id>a76173b2-bcb6-426f-bea2-31f675cda27f</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/HMIJogFwd%3ABOOL</SymbolId>
-      <NaturalDataType>BOOL</NaturalDataType>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/AZD_ActPosSetpoint%3ADINT</SymbolId>
+      <NaturalDataType>DINT</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
       <ColourR>255</ColourR>
       <ColourG>255</ColourG>
       <ColourB>0</ColourB>
       <Historical>false</Historical>
-      <DataType>System.Boolean</DataType>
+      <DataType>System.Int32</DataType>
       <Id>a76173b2-bcb6-426f-bea2-31f675cda27f</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
@@ -79,10 +79,10 @@
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>Drive1.St</Name>
+      <Name>AZD_ActPos</Name>
       <Id>d517900a-afa2-45ef-a7db-d956e43d507f</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Drive1.St%3ADriveStates</SymbolId>
-      <NaturalDataType>DriveStates</NaturalDataType>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/AZD_ActPos%3ADINT</SymbolId>
+      <NaturalDataType>DINT</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
       <ColourR>0</ColourR>
@@ -93,7 +93,7 @@
       <Id>d517900a-afa2-45ef-a7db-d956e43d507f</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
-      <ValueOffset></ValueOffset>
+      <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
     </DataTraceSetItemModel>
   </DataTraceSetModel>

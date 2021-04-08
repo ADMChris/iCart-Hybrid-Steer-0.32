@@ -39,7 +39,6 @@ _EN=Variables
 ++D=BOOL	N=SW_OE	G=VAR
 ++D=BOOL	N=AZ_SW_RTSO	G=VAR
 ++D=BOOL	N=AZ_SW_SO	G=VAR
-++D=DINT	N=PrevSetPos	G=VAR
 ++D=REAL	N=StepperSpeed	G=VAR
 ++D=REAL	N=StepperScale	R=1	G=VAR
 ++D=DINT	N=PrevSetVel	G=VAR
@@ -53,6 +52,7 @@ _EN=Variables
 ++D=TIME	N=SDTim	G=VAR
 ++D=TON	N=sdtimer	G=VAR
 ++D=DINT	N=AZD_HomePos	IV=0	G=VAR
+++D=BOOL	N=paused	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
@@ -73,3 +73,4 @@ _EN=Variables
 ++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
 ++D=BOOL	N=AGVStopped	G=VAR_EXTERNAL
 ++D=BOOL	N=PauseAGV	G=VAR_EXTERNAL
+++D=DINT	N=PrevSetPos	G=VAR_EXTERNAL
