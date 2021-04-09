@@ -18,6 +18,7 @@ _EN=Variables
 ++D=BOOL	N=SR_Enable	G=VAR_GLOBAL	Com=Enable Safety Relays
 ++D=DriveState	N=Drive1State	G=VAR_GLOBAL
 ++D=DriveState	N=Drive2State	G=VAR_GLOBAL
+++D=REAL	N=G_SensorCount	G=VAR_GLOBAL
 ++D=BOOL	N=TrackingRequestPosition	G=VAR_GLOBAL
 ++D=BOOL	N=TrackingPositionRequestDone	G=VAR_GLOBAL
 ++D=INT	N=BatteryVoltage	G=VAR_GLOBAL
@@ -366,3 +367,7 @@ _EN=Variables
 ++D=BOOL	N=SteerDriveEnable	G=VAR_GLOBAL
 ++D=BOOL	N=AGVStopped	G=VAR_GLOBAL
 ++D=DINT	N=PrevSetPos	G=VAR_GLOBAL
+++D=BOOL	N=TagRequestLS	G=VAR_GLOBAL
+++D=BOOL	N=TagRequestRS	G=VAR_GLOBAL
+++D=BOOL	N=ReadyToSpin	G=VAR_GLOBAL
+++D=BOOL	N=SpinFinished	G=VAR_GLOBAL

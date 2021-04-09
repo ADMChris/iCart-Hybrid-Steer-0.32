@@ -81,6 +81,9 @@ _EN=Variables
 ++D=INT	N=StoppingDecel	R=1	IV=75	G=VAR
 ++D=TrackingAccel	N=TrackingAccelFB	G=VAR
 ++D=INT	N=TrackingInterval	R=1	IV=5	G=VAR
+++D=BOOL	N=SpinNextStep	G=VAR
+++D=BOOL	N=SpinNextStep_1	G=VAR
+++D=BOOL	N=SpinNextStep_2	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -134,3 +137,8 @@ _EN=Variables
 ++D=DINT	N=AZD_ActPos	G=VAR_EXTERNAL
 ++D=BOOL	N=ScanWarnHigh	G=VAR_EXTERNAL
 ++D=DINT	N=PrevSetPos	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
+++D=BOOL	N=ReadyToSpin	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL
+++D=BOOL	N=SpinFinished	G=VAR_EXTERNAL
+++D=REAL	N=G_SensorCount	G=VAR_EXTERNAL

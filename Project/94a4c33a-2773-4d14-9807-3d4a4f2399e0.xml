@@ -14,7 +14,7 @@
       <DataType Name="AsWord" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Bit" BaseType="Array[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
-    <DataType Name="OM_Drive" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="18" OffsetType="NJ">
+    <DataType Name="OM_Drive" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="19" OffsetType="NJ">
       <DataType Name="InCmd" BaseType="WordBitUnion" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="OutCmd" BaseType="WordBitUnion" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="WarningCode" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -25,7 +25,7 @@
       <DataType Name="Update" BaseType="RequestResponse" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Reset" BaseType="RequestResponse" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
-    <DataType Name="DriveData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="17" OffsetType="NJ">
+    <DataType Name="DriveData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="18" OffsetType="NJ">
       <DataType Name="Speed" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Torque" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Alarm" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -43,6 +43,9 @@
       <DataType Name="ReqReset" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Ready" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="PrevSt" BaseType="DriveStates" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DriveSpinStates" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="17" OffsetType="NJ">
+      <DataType Name="St" BaseType="SpinStates" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="DriveParam" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="16" OffsetType="NJ">
       <DataType Name="CMDW" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -114,6 +117,15 @@
       <DataType Name="DS_WaitReadAxis" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="24" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="DS_WriteAxis" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="25" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="DS_WaitWriteAxis" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="26" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="SpinStates" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="SST_WaitforTagReq" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="Wait for TagRequest " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_TagReq" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="Tag Request Received" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_SetlimitsRH" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="Set Limits for Drives 1&amp;2 and AZD pos" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_SetlimitsLH" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_PreSetPos" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_Excecute" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="Move Drives to excecute command" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SST_Finished" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="Set states for when iCart is finshed spinning" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="Speeds" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
       <DataType Name="Slow" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
