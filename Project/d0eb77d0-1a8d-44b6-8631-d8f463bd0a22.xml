@@ -8,6 +8,8 @@ _EN=Variables
 ++D=OM_Drive	N=FrontCatch	G=VAR_GLOBAL
 ++D=OM_Drive	N=BackCatch	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=portDriveCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 1, Path := [16#1, 16#0, 16#2, 16#0, 16#1, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
+++D=SpinState	N=SPST	G=VAR_GLOBAL
+++D=BOOL	N=SpinStateDone	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=portCameraCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 2, Path := [16#1, 16#0, 16#2, 16#0, 16#2, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
 ++D=_sDEVICE_PORT	N=DriveDevicePort	G=VAR_GLOBAL
 ++D=_sSERIAL_MODBUSRTU_OPTION	N=DriveOpt	G=VAR_GLOBAL
@@ -360,8 +362,8 @@ _EN=Variables
 ++D=DINT	N=AZD_ActPos	AT=ECAT://node#2/Transmit PDO mapping 1_Position actual value_6064_00	G=VAR_GLOBAL
 ++D=SINT	N=AZD_ActOpmode	AT=ECAT://node#2/Transmit PDO mapping 1_Modes of operation display_6061_00	G=VAR_GLOBAL
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_GLOBAL
-++D=INT	N=Steering_LeftPos	IV=-25000	G=VAR_GLOBAL
-++D=INT	N=Steering_RightPos	IV=25000	G=VAR_GLOBAL
+++D=INT	N=Steering_LeftPos	IV=-29000	G=VAR_GLOBAL
+++D=INT	N=Steering_RightPos	IV=29000	G=VAR_GLOBAL
 ++D=BOOL	N=AZD_SW_OE	G=VAR_GLOBAL	Com=Operation Enabled
 ++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
 ++D=BOOL	N=SteerDriveEnable	G=VAR_GLOBAL
