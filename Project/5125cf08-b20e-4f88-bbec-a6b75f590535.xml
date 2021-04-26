@@ -4,7 +4,6 @@ _EN=Variables
 ++D=WORD	N=SW_Word	G=VAR
 ++D=BOOL	N=AZD_SW_RTSO	G=VAR	Com=Ready to Switch On
 ++D=BOOL	N=AZD_SW_SO	G=VAR	Com=Switched On
-++D=BOOL	N=AZD_SW_Fault	G=VAR	Com=Fault
 ++D=BOOL	N=AZD_SW_VE	G=VAR	Com=Voltage Enabled
 ++D=BOOL	N=AZD_SW_QS	G=VAR	Com=Quick Stop
 ++D=BOOL	N=AZD_SW_SOD	G=VAR	Com=Switch On Disabled
@@ -77,3 +76,5 @@ _EN=Variables
 ++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
 ++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinFinished	G=VAR_EXTERNAL
+++D=BOOL	N=AZD_SW_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=TagSpin	G=VAR_EXTERNAL

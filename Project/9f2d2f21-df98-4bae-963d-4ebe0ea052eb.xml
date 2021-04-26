@@ -176,10 +176,10 @@ _EN=Variables
 ++D=BOOL	N=SktStatusFLag	G=VAR
 ++D=BOOL	N=Drive3ConsecutiveCommsFault	G=VAR
 ++D=BOOL	N=ConveyorFitted	G=VAR
-++D=BOOL	N=D1_Fwd	G=VAR
-++D=BOOL	N=D1_Rev	G=VAR
-++D=BOOL	N=D2_Fwd	G=VAR
-++D=BOOL	N=D2_Rev	G=VAR
+++D=BOOL	N=D1_Fwd	G=VAR	Com=Drive 1 FwD 
+++D=BOOL	N=D1_Rev	G=VAR	Com=Drive 1 Reverse
+++D=BOOL	N=D2_Fwd	G=VAR	Com=Drive 2 Forward
+++D=BOOL	N=D2_Rev	G=VAR	Com=Drive 2 ReV
 ++D=STRING[18]	N=PrevCartIP	G=VAR
 ++D=STRING[18]	N=PrevCartSubnet	G=VAR
 ++D=STRING[18]	N=PrevCartGateway	G=VAR
@@ -232,6 +232,7 @@ _EN=Variables
 ++D=TON	N=ECWriteTimerFB	G=VAR
 ++D=BOOL	N=EC_BLVL_m9	G=VAR
 ++D=BOOL	N=Steer	G=VAR
+++D=TON	N=TapeFoundTimer	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=SR_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=SR1_On	G=VAR_EXTERNAL
@@ -434,3 +435,12 @@ _EN=Variables
 ++D=BOOL	N=EC_BLVR_M2	G=VAR_EXTERNAL
 ++D=BOOL	N=AGVStopped	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinStateDone	G=VAR_EXTERNAL	Com=Tag Spin complete
+++D=BOOL	N=AZD_InFault	G=VAR_EXTERNAL	Com=AZD Drive In fault
+++D=BOOL	N=AZD_SW_Fault	G=VAR_EXTERNAL	Com=AZD Drive in Fault
+++D=BOOL	N=TagLeftPos	G=VAR_EXTERNAL	Com=Spin Left AZD Drive Control
+++D=BOOL	N=TagRightPos	G=VAR_EXTERNAL	Com=Spin Right AZD Drive control 
+++D=BOOL	N=SpinStateComplete	G=VAR_EXTERNAL
+++D=BOOL	N=TagReqRdy	G=VAR_EXTERNAL	Com=Tag Request to move okay. 
+++D=BOOL	N=TapeFound	G=VAR_EXTERNAL	Com=Tape Found During Spin State
+++D=BOOL	N=ReadyToSpin	G=VAR_EXTERNAL
+++D=BOOL	N=SpinFinished	G=VAR_EXTERNAL
