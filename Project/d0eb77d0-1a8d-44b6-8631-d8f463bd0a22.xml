@@ -72,7 +72,7 @@ _EN=Variables
 ++D=UINT	N=CommandFromSupervisor	NTP=PublicationInput	G=VAR_GLOBAL
 ++D=UINT	N=YorkCount	R=1	G=VAR_GLOBAL
 ++D=UINT	N=YorkPointer	R=1	G=VAR_GLOBAL
-++D=StoredSpeeds	N=StoredSpeed	IV=(Slow := 300, Medium := 600, Fast := 1500, SlowAccel := 100, MediumAccel := 150, FastAccel := 250)	G=VAR_GLOBAL
+++D=StoredSpeeds	N=StoredSpeed	IV=(Slow := 300, Medium := 600, Fast := 3000, SlowAccel := 100, MediumAccel := 150, FastAccel := 250)	G=VAR_GLOBAL
 ++D=BOOL	N=RaiseFrontCatch	G=VAR_GLOBAL
 ++D=BOOL	N=LowerFrontCatch	G=VAR_GLOBAL
 ++D=BOOL	N=RaiseBackCatch	G=VAR_GLOBAL
@@ -369,8 +369,9 @@ _EN=Variables
 ++D=BOOL	N=AZD_SW_Fault	G=VAR_GLOBAL
 ++D=BOOL	N=AZD_InFault	G=VAR_GLOBAL
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_GLOBAL
-++D=INT	N=Steering_LeftPos	IV=-29000	G=VAR_GLOBAL
-++D=INT	N=Steering_RightPos	IV=29000	G=VAR_GLOBAL
+++D=INT	N=Steering_LeftPos	IV=-30000	G=VAR_GLOBAL
+++D=INT	N=Steering_RightPos	IV=30000	G=VAR_GLOBAL
+++D=INT	N=Steering_home	IV=0	G=VAR_GLOBAL
 ++D=BOOL	N=AZD_SW_OE	G=VAR_GLOBAL	Com=Operation Enabled
 ++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
 ++D=BOOL	N=SteerDriveEnable	G=VAR_GLOBAL
@@ -379,9 +380,13 @@ _EN=Variables
 ++D=BOOL	N=TagRequestLS	G=VAR_GLOBAL
 ++D=BOOL	N=TagRequestRS	G=VAR_GLOBAL
 ++D=BOOL	N=LastTagrequest	G=VAR_GLOBAL
-++D=BOOL	N=ReadyToSpin	G=VAR_GLOBAL
+++D=BOOL	N=SpinStateActive	G=VAR_GLOBAL
 ++D=BOOL	N=SpinFinished	G=VAR_GLOBAL
 ++D=BOOL	N=SpinSpeed	G=VAR_GLOBAL
-++D=BOOL	N=SpinAct	G=VAR_GLOBAL
+++D=BOOL	N=SpinSetSpeed	G=VAR_GLOBAL
 ++D=BOOL	N=TapeFound	G=VAR_GLOBAL
 ++D=BOOL	N=TagSpin	G=VAR_GLOBAL
+++D=BOOL	N=SpinPause	G=VAR_GLOBAL
+++D=BOOL	N=SpinActive	G=VAR_GLOBAL
+++D=BOOL	N=HMILeft	G=VAR_GLOBAL
+++D=BOOL	N=HMIRight	G=VAR_GLOBAL

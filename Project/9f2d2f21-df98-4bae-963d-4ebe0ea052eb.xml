@@ -442,5 +442,12 @@ _EN=Variables
 ++D=BOOL	N=SpinStateComplete	G=VAR_EXTERNAL
 ++D=BOOL	N=TagReqRdy	G=VAR_EXTERNAL	Com=Tag Request to move okay. 
 ++D=BOOL	N=TapeFound	G=VAR_EXTERNAL	Com=Tape Found During Spin State
-++D=BOOL	N=ReadyToSpin	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinFinished	G=VAR_EXTERNAL
+++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL	Com=e
+++D=BOOL	N=SpinPause	G=VAR_EXTERNAL	Com=pause AGV during Spin
+++D=REAL	N=G_SensorCount	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
+++D=BOOL	N=SpinActive	Ord=1	G=VAR_EXTERNAL	AOE=1	Com=Spin active
+++D=INT	N=Steering_LeftPos	Ord=2	G=VAR_EXTERNAL	AOE=1
+++D=DINT	N=AZD_SetPos	Ord=3	G=VAR_EXTERNAL	AOE=1
+++D=INT	N=Steering_RightPos	Ord=4	G=VAR_EXTERNAL	AOE=1

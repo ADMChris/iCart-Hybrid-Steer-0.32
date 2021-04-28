@@ -52,6 +52,14 @@ _EN=Variables
 ++D=TON	N=sdtimer	G=VAR
 ++D=DINT	N=AZD_HomePos	IV=0	G=VAR
 ++D=BOOL	N=paused	G=VAR
+++D=BOOL	N=CartStopped	G=VAR
+++D=BOOL	N=AZD_PosR	G=VAR	Com=AZD Drive position Right
+++D=BOOL	N=AZD_POSL	G=VAR	Com=AZD Drive Position Left
+++D=BOOL	N=PosRightMet	G=VAR	Com=Drive is in position
+++D=BOOL	N=steerreset	G=VAR
+++D=BOOL	N=SteeringSet	G=VAR
+++D=BOOL	N=s1	Ord=1	G=VAR	AOE=1
+++D=BOOL	N=s2	Ord=2	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
@@ -78,3 +86,10 @@ _EN=Variables
 ++D=BOOL	N=SpinFinished	G=VAR_EXTERNAL
 ++D=BOOL	N=AZD_SW_Fault	G=VAR_EXTERNAL
 ++D=BOOL	N=TagSpin	G=VAR_EXTERNAL
+++D=BOOL	N=SpinPause	G=VAR_EXTERNAL
+++D=BOOL	N=SpinActive	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
+++D=INT	N=Steering_home	G=VAR_EXTERNAL
+++D=BOOL	N=HMIJogLeft	G=VAR_EXTERNAL	Com=Not HMI Manual control left
+++D=BOOL	N=HMIJogRight	G=VAR_EXTERNAL	Com=Not HMI manual Control right 
