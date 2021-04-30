@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SpinStateLeftt	N=Prev_Spinstate	G=VAR
+++D=BOOL	N=WaitNextScan	G=VAR
+++D=INT	N=TimeInState	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateComplete	G=VAR_EXTERNAL
+++D=BOOL	N=SpinPause	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
+++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
+++D=DINT	N=AZD_SetPos	G=VAR_EXTERNAL
+++D=DINT	N=AZD_ActPos	G=VAR_EXTERNAL
+++D=BOOL	N=SpinSetSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=DriveSpin	G=VAR_EXTERNAL
+++D=REAL	N=G_SensorCount	G=VAR_EXTERNAL
+++D=BOOL	N=TagSpin	G=VAR_EXTERNAL
+++D=dINT	N=Steering_Home	G=VAR_EXTERNAL
+++D=SpinStateLeftt	N=SpinstateL	G=VAR_EXTERNAL
+++D=BOOL	N=TagDriveSetL	G=VAR_EXTERNAL
+++D=BOOL	N=Spinleft	G=VAR_EXTERNAL
+++D=BOOL	N=AGVStopped	G=VAR_EXTERNAL
+++D=INT	N=LeftSpeedOut	G=VAR_EXTERNAL
+++D=INT	N=RightSpeedOut	G=VAR_EXTERNAL
+++D=DINT	N=PrevSetPos	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateReset	G=VAR_EXTERNAL
+++D=INT	N=AZD_ActCurrent	G=VAR_EXTERNAL
+++D=DINT	N=Steering_LeftPos	G=VAR_EXTERNAL
+++D=BOOL	N=SS_BLV_Stp	G=VAR_EXTERNAL

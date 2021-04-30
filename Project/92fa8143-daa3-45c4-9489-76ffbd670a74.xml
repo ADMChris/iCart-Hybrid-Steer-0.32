@@ -16,7 +16,8 @@
     <AssociatedProgramData ProgramName="Drive1CMD" InstanceName="Drive1CMD" IniFileTrackingId="e96ef2a88c544b3681034741216deb3b" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="Drive2CMD" InstanceName="Drive2CMD" IniFileTrackingId="5491e30411404c2496f6481588c55d51" StartupSetting="TRUE" SequenceNumber="7" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="SteerDrive" InstanceName="SteerDrive" IniFileTrackingId="1a639e42b6d94bafbbc4b46edd515d14" StartupSetting="TRUE" SequenceNumber="8" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="TagRequestSpin" InstanceName="TagRequestSpin" IniFileTrackingId="b777eb314b174b2097df3c9805293a14" StartupSetting="TRUE" SequenceNumber="9" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="RightSpinRequest" InstanceName="RightSpinRequest" IniFileTrackingId="b777eb314b174b2097df3c9805293a14" StartupSetting="TRUE" SequenceNumber="9" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="LeftSpinRequest" InstanceName="LeftSpinRequest" IniFileTrackingId="f108c5111b52486dba730e994802d290" StartupSetting="TRUE" SequenceNumber="10" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="95479be3-1260-4ea7-88f9-dbd119025417" />

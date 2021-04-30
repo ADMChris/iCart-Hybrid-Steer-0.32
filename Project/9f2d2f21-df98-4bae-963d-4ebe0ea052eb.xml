@@ -233,6 +233,8 @@ _EN=Variables
 ++D=BOOL	N=EC_BLVL_m9	G=VAR
 ++D=BOOL	N=Steer	G=VAR
 ++D=TON	N=TapeFoundTimer	G=VAR
+++D=BOOL	N=TaglefttPos	G=VAR
+++D=TON	N=SpinDrveTimer	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=SR_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=SR1_On	G=VAR_EXTERNAL
@@ -437,8 +439,6 @@ _EN=Variables
 ++D=BOOL	N=SpinStateDone	G=VAR_EXTERNAL	Com=Tag Spin complete
 ++D=BOOL	N=AZD_InFault	G=VAR_EXTERNAL	Com=AZD Drive In fault
 ++D=BOOL	N=AZD_SW_Fault	G=VAR_EXTERNAL	Com=AZD Drive in Fault
-++D=BOOL	N=TagLeftPos	G=VAR_EXTERNAL	Com=Spin Left AZD Drive Control
-++D=BOOL	N=TagRightPos	G=VAR_EXTERNAL	Com=Spin Right AZD Drive control 
 ++D=BOOL	N=SpinStateComplete	G=VAR_EXTERNAL
 ++D=BOOL	N=TagReqRdy	G=VAR_EXTERNAL	Com=Tag Request to move okay. 
 ++D=BOOL	N=TapeFound	G=VAR_EXTERNAL	Com=Tape Found During Spin State
@@ -447,7 +447,13 @@ _EN=Variables
 ++D=BOOL	N=SpinPause	G=VAR_EXTERNAL	Com=pause AGV during Spin
 ++D=REAL	N=G_SensorCount	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
-++D=BOOL	N=SpinActive	Ord=1	G=VAR_EXTERNAL	AOE=1	Com=Spin active
-++D=INT	N=Steering_LeftPos	Ord=2	G=VAR_EXTERNAL	AOE=1
-++D=DINT	N=AZD_SetPos	Ord=3	G=VAR_EXTERNAL	AOE=1
-++D=INT	N=Steering_RightPos	Ord=4	G=VAR_EXTERNAL	AOE=1
+++D=BOOL	N=SpinActive	G=VAR_EXTERNAL	Com=Spin active
+++D=DINT	N=Steering_LeftPos	G=VAR_EXTERNAL
+++D=DINT	N=AZD_SetPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_RightPos	G=VAR_EXTERNAL
+++D=BOOL	N=DriveSpin	G=VAR_EXTERNAL	Com=Spinstate true activate drives
+++D=BOOL	N=AGVpause	G=VAR_EXTERNAL	Com=Spin pause for agv
+++D=BOOL	N=TagDriveSetR	G=VAR_EXTERNAL	Com=Set Drives to Spin Right
+++D=BOOL	N=TagDriveSetL	G=VAR_EXTERNAL	Com=Set Drives to spin left
+++D=BOOL	N=SS_BLV_Stp	G=VAR_EXTERNAL
+++D=BOOL	N=SS_BLV_MBFREE	G=VAR_EXTERNAL

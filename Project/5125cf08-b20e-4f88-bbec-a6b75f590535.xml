@@ -58,8 +58,14 @@ _EN=Variables
 ++D=BOOL	N=PosRightMet	G=VAR	Com=Drive is in position
 ++D=BOOL	N=steerreset	G=VAR
 ++D=BOOL	N=SteeringSet	G=VAR
-++D=BOOL	N=s1	Ord=1	G=VAR	AOE=1
-++D=BOOL	N=s2	Ord=2	G=VAR	AOE=1
+++D=BOOL	N=s1	G=VAR
+++D=BOOL	N=s2	G=VAR
+++D=TON	N=SpinResetTimer	G=VAR
+++D=DINT	N=TempSetPos	Ord=1	G=VAR	AOE=1
+++D=DINT	N=tempSetVel	Ord=2	G=VAR	AOE=1
+++D=INT	N=SSWheelTorque	IV=300	Ord=7	G=VAR	AOE=1
+++D=BOOL	N=spinsta	Ord=8	G=VAR	AOE=1
+++D=INT	N=SS_StepperScale	IV=30000	Ord=9	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL
@@ -67,8 +73,8 @@ _EN=Variables
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_SetPos	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_ActPosSetpoint	G=VAR_EXTERNAL
-++D=INT	N=Steering_RightPos	G=VAR_EXTERNAL
-++D=INT	N=Steering_LeftPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_RightPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_LeftPos	G=VAR_EXTERNAL
 ++D=BOOL	N=AZD_SW_OE	G=VAR_EXTERNAL
 ++D=SINT	N=AZD_SetOpMode	G=VAR_EXTERNAL
 ++D=BOOL	N=StartPB	G=VAR_EXTERNAL
@@ -89,7 +95,8 @@ _EN=Variables
 ++D=BOOL	N=SpinPause	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinActive	G=VAR_EXTERNAL
 ++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
-++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
-++D=INT	N=Steering_home	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL	Com=Spinstate not active Stepper scale is normal
 ++D=BOOL	N=HMIJogLeft	G=VAR_EXTERNAL	Com=Not HMI Manual control left
 ++D=BOOL	N=HMIJogRight	G=VAR_EXTERNAL	Com=Not HMI manual Control right 
+++D=dINT	N=Steering_Home	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateReset	G=VAR_EXTERNAL	Com=Reset for spin right or left using up diff of start push button

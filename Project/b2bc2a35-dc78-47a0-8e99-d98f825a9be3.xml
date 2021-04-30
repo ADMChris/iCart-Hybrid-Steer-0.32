@@ -129,8 +129,8 @@ _EN=Variables
 ++D=BOOL	N=K1On	G=VAR_EXTERNAL
 ++D=INT	N=TrackingCount	G=VAR_EXTERNAL
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_EXTERNAL
-++D=INT	N=Steering_RightPos	G=VAR_EXTERNAL
-++D=INT	N=Steering_LeftPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_RightPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_LeftPos	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_SetPos	G=VAR_EXTERNAL
 ++D=BOOL	N=AGVStopped	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_ActPosSetpoint	G=VAR_EXTERNAL

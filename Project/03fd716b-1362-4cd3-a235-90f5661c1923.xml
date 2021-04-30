@@ -2,6 +2,10 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=BOOL	N=Spintime	G=VAR
+++D=BOOL	N=tapetrue	G=VAR
+++D=INT	N=TimeInState	G=VAR
+++D=SpinStateRight	N=Prev_Spinstate	G=VAR
+++D=BOOL	N=WaitNextScan	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
 ++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL
@@ -9,10 +13,10 @@ _EN=Variables
 ++D=BOOL	N=StopAGV	G=VAR_EXTERNAL
 ++D=BOOL	N=AZD_SW_OE	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_SetPos	G=VAR_EXTERNAL
-++D=INT	N=Steering_LeftPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_LeftPos	G=VAR_EXTERNAL
 ++D=DriveData	N=Drive1	G=VAR_EXTERNAL
 ++D=DriveData	N=Drive2	G=VAR_EXTERNAL
-++D=INT	N=Steering_RightPos	G=VAR_EXTERNAL
+++D=DINT	N=Steering_RightPos	G=VAR_EXTERNAL
 ++D=INT	N=AZD_ActCurrent	G=VAR_EXTERNAL
 ++D=REAL	N=Speed	G=VAR_EXTERNAL
 ++D=REAL	N=G_SensorCount	G=VAR_EXTERNAL
@@ -27,10 +31,7 @@ _EN=Variables
 ++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
 ++D=BOOL	N=LastTagrequest	G=VAR_EXTERNAL
 ++D=BOOL	N=ForkDetected	G=VAR_EXTERNAL
-++D=BOOL	N=TagRightPos	G=VAR_EXTERNAL
-++D=BOOL	N=TagLeftPos	G=VAR_EXTERNAL
 ++D=BOOL	N=TagReqRdy	G=VAR_EXTERNAL
-++D=SpinState	N=SS	G=VAR_EXTERNAL
 ++D=BOOL	N=SafeEdgeOK	G=VAR_EXTERNAL
 ++D=BOOL	N=TapeFound	G=VAR_EXTERNAL
 ++D=DINT	N=AZD_SetVel	G=VAR_EXTERNAL
@@ -40,4 +41,19 @@ _EN=Variables
 ++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinActive	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinSetSpeed	G=VAR_EXTERNAL
-++D=INT	N=Steering_home	Ord=1	G=VAR_EXTERNAL	AOE=1
+++D=DINT	N=AZD_ActSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=DriveSpin	G=VAR_EXTERNAL
+++D=dINT	N=Steering_Home	G=VAR_EXTERNAL
+++D=BOOL	N=AGVpause	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateComplete	G=VAR_EXTERNAL
+++D=BOOL	N=AGVRunning	G=VAR_EXTERNAL
+++D=SpinStateRight	N=SpinstateR	G=VAR_EXTERNAL
+++D=BOOL	N=TagDriveSetR	G=VAR_EXTERNAL
+++D=BOOL	N=StartPB	G=VAR_EXTERNAL
+++D=BOOL	N=Spinright	G=VAR_EXTERNAL
+++D=WORD	N=LastTagLowWord	G=VAR_EXTERNAL
+++D=BOOL	N=SpinStateReset	G=VAR_EXTERNAL
+++D=INT	N=LeftSpeedOut	G=VAR_EXTERNAL
+++D=INT	N=RightSpeedOut	G=VAR_EXTERNAL
+++D=BOOL	N=SS_BLV_Stp	G=VAR_EXTERNAL
+++D=BOOL	N=SS_BLV_MBFREE	G=VAR_EXTERNAL
