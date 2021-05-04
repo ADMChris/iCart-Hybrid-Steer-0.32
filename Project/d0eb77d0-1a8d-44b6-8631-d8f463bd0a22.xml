@@ -398,3 +398,7 @@ _EN=Variables
 ++D=BOOL	N=SS_BLV_MBFREE	G=VAR_GLOBAL
 ++D=BOOL	N=HMILeft	G=VAR_GLOBAL
 ++D=BOOL	N=HMIRight	G=VAR_GLOBAL
+++D=BOOL	N=LS_90Deg	G=VAR_GLOBAL	Com=90 deg spin left if station number matches. 
+++D=BOOL	N=RS_90Deg	G=VAR_GLOBAL	Com=90 deg spin right if station matches
+++D=BOOL	N=LS_180Deg	G=VAR_GLOBAL	Com=180 deg spin left if station number matches
+++D=BOOL	N=RS_180Deg	G=VAR_GLOBAL	Com=180 deg spin right if station number matches. 
