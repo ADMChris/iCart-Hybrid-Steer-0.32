@@ -145,3 +145,5 @@ _EN=Variables
 ++D=BOOL	N=TagSpin	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinStateActive	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinSetSpeed	G=VAR_EXTERNAL
+++D=REAL	N=Spin_LeftRealSpeed	G=VAR_EXTERNAL
+++D=REAL	N=Spin_RightRealSpeed	G=VAR_EXTERNAL

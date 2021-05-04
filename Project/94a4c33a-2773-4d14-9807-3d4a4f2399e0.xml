@@ -80,6 +80,10 @@
       <DataType Name="SS_TapeDetect" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="9" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SS_Reset" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="888" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SS_AZDSetL" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SS_SpinSet90" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1000" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SS_Spin90" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1002" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SS_SpinSet180" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1001" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SS_Spin180" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1003" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="SpinStateLeftt" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
       <DataType Name="SL_idle" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -93,6 +97,10 @@
       <DataType Name="SL_AZDCenter" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SL_AZDWaitToCenter" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="9" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SL_Complete" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="10" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SL_SpinSet90" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1000" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SL_Spin90" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1002" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SL_SpinSet180" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1001" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SL_Spin180" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1003" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SL_Fault" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="999" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SL_HandleFault" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="998" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="SL_Reset" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="888" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
