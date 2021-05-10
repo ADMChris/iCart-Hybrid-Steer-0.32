@@ -404,3 +404,7 @@ _EN=Variables
 ++D=BOOL	N=RS_180Deg	G=VAR_GLOBAL	Com=180 deg spin right if station number matches. 
 ++D=REAL	N=Spin_LeftRealSpeed	G=VAR_GLOBAL
 ++D=REAL	N=Spin_RightRealSpeed	G=VAR_GLOBAL
+++D=BOOL	N=SpinDegSpeed	G=VAR_GLOBAL
+++D=BOOL	N=Speed_180Deg	G=VAR_GLOBAL
+++D=REAL	N=OffSetX_mm	G=VAR_GLOBAL
+++D=REAL	N=OffSetY_mm	G=VAR_GLOBAL
