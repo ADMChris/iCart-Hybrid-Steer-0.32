@@ -84,6 +84,12 @@ _EN=Variables
 ++D=BOOL	N=SpinNextStep	G=VAR
 ++D=BOOL	N=SpinNextStep_1	G=VAR
 ++D=BOOL	N=SpinNextStep_2	G=VAR
+++D=REAL	N=SteeringPos	G=VAR
+++D=DINT	N=AZD_SetPosTest	G=VAR
+++D=REAL	N=Steering_Difference_Value	G=VAR
+++D=REAL	N=Degrees_Travelled	G=VAR
+++D=REAL	N=Degrees_per_step	G=VAR
+++D=REAL	N=Prev_Degrees_Travelled	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -148,3 +154,5 @@ _EN=Variables
 ++D=REAL	N=Spin_LeftRealSpeed	G=VAR_EXTERNAL
 ++D=REAL	N=Spin_RightRealSpeed	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinDegSpeed	G=VAR_EXTERNAL
+++D=dINT	N=Steering_Home	G=VAR_EXTERNAL
+++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
