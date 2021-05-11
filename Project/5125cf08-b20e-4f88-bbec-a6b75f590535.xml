@@ -65,7 +65,7 @@ _EN=Variables
 ++D=DINT	N=tempSetVel	G=VAR
 ++D=INT	N=SSWheelTorque	IV=300	G=VAR
 ++D=BOOL	N=spinsta	G=VAR
-++D=INT	N=SS_StepperScale	IV=30000	G=VAR
+++D=DINT	N=SS_StepperScale	IV=30000	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UINT	N=AZD_StatusWord	G=VAR_EXTERNAL
 ++D=UINT	N=AZD_ControlWord	G=VAR_EXTERNAL

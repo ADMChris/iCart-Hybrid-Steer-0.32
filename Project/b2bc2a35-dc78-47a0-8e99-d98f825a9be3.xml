@@ -90,6 +90,24 @@ _EN=Variables
 ++D=REAL	N=Degrees_Travelled	G=VAR
 ++D=REAL	N=Degrees_per_step	G=VAR
 ++D=REAL	N=Prev_Degrees_Travelled	G=VAR
+++D=REAL	N=Angle_Degrees	G=VAR
+++D=REAL	N=Drive_track_m	G=VAR	Com=Distance between centers of driving wheels. 
+++D=REAL	N=Wheel_Base_m	G=VAR
+++D=REAL	N=Gear_Ratio	G=VAR
+++D=REAL	N=Wheel_Radius	G=VAR
+++D=REAL	N=Angle_rad	G=VAR
+++D=REAL	N=PI	G=VAR
+++D=REAL	N=RearAxleTurnRadius_m	G=VAR
+++D=REAL	N=LeftWheelTurnRadius	G=VAR
+++D=REAL	N=RightWheelTurnRadius	G=VAR
+++D=REAL	N=Speed_ms	G=VAR
+++D=REAL	N=LeftSpeed_ms	G=VAR
+++D=REAL	N=RightSpeed_ms	G=VAR
+++D=REAL	N=DistancePerMotorRev_m	G=VAR
+++D=REAL	N=LeftSpeed_RPM	G=VAR
+++D=REAL	N=RightSpeed_RPM	G=VAR
+++D=REAL	N=Deg_To_Steps	G=VAR
+++D=REAL	N=Stepper_Deg_Per_Step	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -156,3 +174,5 @@ _EN=Variables
 ++D=BOOL	N=SpinDegSpeed	G=VAR_EXTERNAL
 ++D=dINT	N=Steering_Home	G=VAR_EXTERNAL
 ++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
+++D=INT	N=SpeedOut	G=VAR_EXTERNAL
+++D=BOOL	N=RightBoxSensor	G=VAR_EXTERNAL
