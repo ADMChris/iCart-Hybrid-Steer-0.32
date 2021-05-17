@@ -10,6 +10,10 @@ _EN=Variables
 ++D=_sNXUNIT_ID	N=portDriveCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 1, Path := [16#1, 16#0, 16#2, 16#0, 16#1, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
 ++D=SpinStateRight	N=SpinstateR	G=VAR_GLOBAL
 ++D=SpinStateLeftt	N=SpinstateL	G=VAR_GLOBAL
+++D=BOOL	N=TagReqTest	G=VAR_GLOBAL
+++D=BOOL	N=TagReqTestFinish	G=VAR_GLOBAL
+++D=BOOL	N=TagTestActive	G=VAR_GLOBAL
+++D=AZD_Test	N=AZD_TS	G=VAR_GLOBAL
 ++D=BOOL	N=SpinStateDone	G=VAR_GLOBAL
 ++D=_sNXUNIT_ID	N=portCameraCIF	IV=(NodeAdr := 65535, IPAdr := [5(16#FF)], UnitNo := 2, Path := [16#1, 16#0, 16#2, 16#0, 16#2, 59(16#0)], PathLength := 6)	Const=1	G=VAR_GLOBAL
 ++D=_sDEVICE_PORT	N=DriveDevicePort	G=VAR_GLOBAL

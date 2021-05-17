@@ -7,6 +7,8 @@ _EN=Variables
 ++D=SpinStateRight	N=Prev_Spinstate	G=VAR
 ++D=BOOL	N=WaitNextScan	G=VAR
 ++D=REAL	N=Spin_Distance	G=VAR
+++D=REAL	N=State_count	G=VAR
+++D=REAL	N=Prev_StateCount	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
 ++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL

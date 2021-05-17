@@ -18,6 +18,7 @@
     <AssociatedProgramData ProgramName="SteerDrive" InstanceName="SteerDrive" IniFileTrackingId="1a639e42b6d94bafbbc4b46edd515d14" StartupSetting="TRUE" SequenceNumber="8" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="RightSpinRequest" InstanceName="RightSpinRequest" IniFileTrackingId="b777eb314b174b2097df3c9805293a14" StartupSetting="TRUE" SequenceNumber="9" IsDebugProgram="false" />
     <AssociatedProgramData ProgramName="LeftSpinRequest" InstanceName="LeftSpinRequest" IniFileTrackingId="f108c5111b52486dba730e994802d290" StartupSetting="TRUE" SequenceNumber="10" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="TestForSteering" InstanceName="TestForSteering" IniFileTrackingId="2f43a6cd9e18427687c2d610ab68341d" StartupSetting="TRUE" SequenceNumber="11" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="95479be3-1260-4ea7-88f9-dbd119025417" />

@@ -133,6 +133,17 @@
       <DataType Name="ResetBLVR" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="41" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="WaitResetBLVL" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="39" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
+    <DataType Name="AZD_Test" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="AT_Idle" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_WaitForTagReq" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_TagAck" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_SetAZD" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_WaitForAZDSet" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_DoTest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_WaitForTest" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_TestComplete" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AT_Reset" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
     <DataType Name="DriveStates" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
       <DataType Name="DS_Idle" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="DS_SetAccel" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />

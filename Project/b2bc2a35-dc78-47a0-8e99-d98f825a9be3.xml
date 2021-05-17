@@ -108,6 +108,29 @@ _EN=Variables
 ++D=REAL	N=RightSpeed_RPM	G=VAR
 ++D=REAL	N=Deg_To_Steps	G=VAR
 ++D=REAL	N=Stepper_Deg_Per_Step	G=VAR
+++D=REAL	N=InternalSpeedRM	G=VAR
+++D=REAL	N=InternalSpeedLM	G=VAR
+++D=REAL	N=RampSpeedOut_RM	G=VAR
+++D=REAL	N=RampSpeedOut_LM	G=VAR
+++D=REAL	N=RampSpeed_Prev_RM	G=VAR
+++D=REAL	N=RampSpeed_Prev_LM	G=VAR
+++D=REAL	N=RearAxleTR_m	G=VAR
+++D=REAL	N=COS_Rad_angle	Ord=1	G=VAR	AOE=1
+++D=REAL	N=SIN_Rad_angle	Ord=2	G=VAR	AOE=1
+++D=REAL	N=COS_Angle_deg	Ord=3	G=VAR	AOE=1
+++D=REAL	N=SIN_angle_Deg	Ord=4	G=VAR	AOE=1
+++D=REAL	N=Angle_Steer_B	Ord=5	G=VAR	AOE=1
+++D=REAL	N=Angle_Steer_B_Left	Ord=6	G=VAR	AOE=1
+++D=REAL	N=Angle_Steer_B_Right	Ord=7	G=VAR	AOE=1
+++D=REAL	N=Angle_steer_A_Left	Ord=8	G=VAR	AOE=1
+++D=REAL	N=Angle_steer_A_Right	Ord=9	G=VAR	AOE=1
+++D=REAL	N=RearAxleTurnRadius_m_Left	Ord=10	G=VAR	AOE=1
+++D=REAL	N=abb	Ord=12	G=VAR	AOE=1
+++D=REAL	N=Rads_steer_B_Left	Ord=13	G=VAR	AOE=1
+++D=REAL	N=Rads_steer_B_Right	Ord=14	G=VAR	AOE=1
+++D=REAL	N=Rads_steer_A_Left	Ord=15	G=VAR	AOE=1
+++D=REAL	N=Rads_steer_A_right	Ord=16	G=VAR	AOE=1
+++D=REAL	N=RearAxleTurnRadius_m_Right	Ord=17	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -176,3 +199,6 @@ _EN=Variables
 ++D=WORD	N=LastTagHighWord	G=VAR_EXTERNAL
 ++D=INT	N=SpeedOut	G=VAR_EXTERNAL
 ++D=BOOL	N=RightBoxSensor	G=VAR_EXTERNAL
+++D=BOOL	N=TagTestActive	G=VAR_EXTERNAL
+++D=BOOL	N=LeftBoxSensor	Ord=11	G=VAR_EXTERNAL	AOE=1
+++D=Speeds	N=TagRequestedSpeed	Ord=18	G=VAR_EXTERNAL	AOE=1

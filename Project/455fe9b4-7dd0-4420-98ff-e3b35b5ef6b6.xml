@@ -1,32 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <data>
   <DataTraceEnvironmentalModel>
-    <CursorPosition>-47.146359857553584</CursorPosition>
-    <StartTime>1970-01-01T13:45:13.719</StartTime>
+    <CursorPosition>-1815.94974</CursorPosition>
+    <StartTime>1970-01-01T10:44:42.23</StartTime>
     <IsInAbsoluteTimeMode>false</IsInAbsoluteTimeMode>
     <SeriesAxisSettings>
       <SeriesAxis>
-        <SeriesId>b470d84c-28ae-4549-a4d9-2c5486fc1433</SeriesId>
+        <SeriesId>d39371e0-b753-440d-b2fd-6640faf66bea</SeriesId>
         <AxisMin>0</AxisMin>
         <AxisMax>0</AxisMax>
       </SeriesAxis>
       <SeriesAxis>
-        <SeriesId>cf83b20e-c829-47d1-8ff1-99b98b053a49</SeriesId>
-        <AxisMin>0</AxisMin>
-        <AxisMax>0</AxisMax>
-      </SeriesAxis>
-      <SeriesAxis>
-        <SeriesId>935e0702-5b33-4c58-94c2-50fd29d62f76</SeriesId>
-        <AxisMin>0</AxisMin>
-        <AxisMax>0</AxisMax>
-      </SeriesAxis>
-      <SeriesAxis>
-        <SeriesId>a76173b2-bcb6-426f-bea2-31f675cda27f</SeriesId>
-        <AxisMin>0</AxisMin>
-        <AxisMax>0</AxisMax>
-      </SeriesAxis>
-      <SeriesAxis>
-        <SeriesId>d517900a-afa2-45ef-a7db-d956e43d507f</SeriesId>
+        <SeriesId>609ba281-737e-441c-b187-a133e7aad848</SeriesId>
         <AxisMin>0</AxisMin>
         <AxisMax>0</AxisMax>
       </SeriesAxis>

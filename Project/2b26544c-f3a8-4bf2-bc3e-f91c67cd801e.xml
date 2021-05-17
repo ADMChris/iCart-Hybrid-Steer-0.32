@@ -3,18 +3,18 @@
   <NexDataTraceConfigModel>
     <TaskName>BaseControl</TaskName>
     <TraceId>0</TraceId>
-    <SampleTimingType>cyclic</SampleTimingType>
+    <SampleTimingType>interval</SampleTimingType>
     <SamplingInterval>1</SamplingInterval>
-    <SamplingTime>1</SamplingTime>
-    <PostTriggerDataRatio>92</PostTriggerDataRatio>
+    <SamplingTime>2</SamplingTime>
+    <PostTriggerDataRatio>87</PostTriggerDataRatio>
     <StartOnRun>False</StartOnRun>
     <EnableRealTimeDisplay>True</EnableRealTimeDisplay>
     <BehaviorWhenMax>Stop</BehaviorWhenMax>
     <NumSamplingRecords>10000</NumSamplingRecords>
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Sensor.Bit[14]%3ABOOL</SymbolId>
-      <SymbolName>Sensor.bit[14]</SymbolName>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/StartPB%3ABOOL</SymbolId>
+      <SymbolName>StartPB</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>
