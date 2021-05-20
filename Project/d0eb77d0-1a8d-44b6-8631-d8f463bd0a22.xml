@@ -77,7 +77,7 @@ _EN=Variables
 ++D=UINT	N=CommandFromSupervisor	NTP=PublicationInput	G=VAR_GLOBAL
 ++D=UINT	N=YorkCount	R=1	G=VAR_GLOBAL
 ++D=UINT	N=YorkPointer	R=1	G=VAR_GLOBAL
-++D=StoredSpeeds	N=StoredSpeed	IV=(Slow := 400, Medium := 800, Fast := 1500, SlowAccel := 100, MediumAccel := 150, FastAccel := 250)	G=VAR_GLOBAL
+++D=StoredSpeeds	N=StoredSpeed	IV=(Slow := 600, Medium := 800, Fast := 1500, SlowAccel := 125, MediumAccel := 175, FastAccel := 250)	G=VAR_GLOBAL
 ++D=BOOL	N=RaiseFrontCatch	G=VAR_GLOBAL
 ++D=BOOL	N=LowerFrontCatch	G=VAR_GLOBAL
 ++D=BOOL	N=RaiseBackCatch	G=VAR_GLOBAL
@@ -412,3 +412,7 @@ _EN=Variables
 ++D=BOOL	N=Speed_180Deg	G=VAR_GLOBAL
 ++D=REAL	N=OffSetX_mm	G=VAR_GLOBAL
 ++D=REAL	N=OffSetY_mm	G=VAR_GLOBAL
+++D=REAL	N=G_CornerDetect	G=VAR_GLOBAL	AOE=1
+++D=REAL	N=G_CornerInt	G=VAR_GLOBAL	AOE=1
+++D=BOOL	N=Break_ReleaseR	G=VAR_GLOBAL	AOE=1
+++D=BOOL	N=Break_ReleaseL	G=VAR_GLOBAL	AOE=1

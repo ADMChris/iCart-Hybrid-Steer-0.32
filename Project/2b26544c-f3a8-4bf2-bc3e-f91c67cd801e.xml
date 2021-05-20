@@ -13,8 +13,8 @@
     <NumSamplingRecords>10000</NumSamplingRecords>
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/StartPB%3ABOOL</SymbolId>
-      <SymbolName>StartPB</SymbolName>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/EC_BLVL_TRIG%3ABOOL</SymbolId>
+      <SymbolName>EC_BLVL_TRIG</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>

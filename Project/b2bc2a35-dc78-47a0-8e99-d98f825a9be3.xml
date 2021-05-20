@@ -131,6 +131,17 @@ _EN=Variables
 ++D=REAL	N=Rads_steer_A_Left	Ord=15	G=VAR	AOE=1
 ++D=REAL	N=Rads_steer_A_right	Ord=16	G=VAR	AOE=1
 ++D=REAL	N=RearAxleTurnRadius_m_Right	Ord=17	G=VAR	AOE=1
+++D=REAL	N=frontaxelradius	Ord=19	G=VAR	AOE=1
+++D=REAL	N=motor_center_radius	Ord=20	G=VAR	AOE=1
+++D=REAL	N=MotorOuterRadius	Ord=21	G=VAR	AOE=1
+++D=REAL	N=motorinnerRadius	Ord=22	G=VAR	AOE=1
+++D=REAL	N=diff_drive_ratio	Ord=23	G=VAR	AOE=1
+++D=REAL	N=Steering_Angle_BelowAxel	Ord=28	G=VAR	AOE=1
+++D=REAL	N=Steering_angle_belowAxelRads	Ord=29	G=VAR	AOE=1
+++D=REAL	N=Wheel_Base_Squared_m	Ord=30	G=VAR	AOE=1
+++D=REAL	N=motor_center_radius_Squared	Ord=31	G=VAR	AOE=1
+++D=REAL	N=frontaxelradius_Sq	Ord=32	G=VAR	AOE=1
+++D=REAL	N=wheel_C	Ord=33	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -202,3 +213,7 @@ _EN=Variables
 ++D=BOOL	N=TagTestActive	G=VAR_EXTERNAL
 ++D=BOOL	N=LeftBoxSensor	Ord=11	G=VAR_EXTERNAL	AOE=1
 ++D=Speeds	N=TagRequestedSpeed	Ord=18	G=VAR_EXTERNAL	AOE=1
+++D=REAL	N=G_CornerDetect	Ord=24	G=VAR_EXTERNAL	AOE=1
+++D=REAL	N=G_CornerInt	Ord=25	G=VAR_EXTERNAL	AOE=1
+++D=BOOL	N=EC_BLVR_MBFREE	Ord=26	G=VAR_EXTERNAL	AOE=1
+++D=BOOL	N=Break_ReleaseR	Ord=27	G=VAR_EXTERNAL	AOE=1

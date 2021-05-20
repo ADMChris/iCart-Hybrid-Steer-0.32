@@ -3,9 +3,9 @@
   <DataTraceSetModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>AZD_ActSpeed</Name>
+      <Name>Drive2.Torque</Name>
       <Id>d39371e0-b753-440d-b2fd-6640faf66bea</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/AZD_ActSpeed%3ADINT</SymbolId>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Drive2.Torque%3ADINT</SymbolId>
       <NaturalDataType>DINT</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
@@ -15,6 +15,44 @@
       <Historical>false</Historical>
       <DataType>System.Int32</DataType>
       <Id>d39371e0-b753-440d-b2fd-6640faf66bea</Id>
+      <Visible>false</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Drive2.Speed</Name>
+      <Id>609ba281-737e-441c-b187-a133e7aad848</Id>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/Drive2.Speed%3ADINT</SymbolId>
+      <NaturalDataType>DINT</NaturalDataType>
+      <Comment></Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>255</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Int32</DataType>
+      <Id>609ba281-737e-441c-b187-a133e7aad848</Id>
+      <Visible>false</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>RightSpeedOut</Name>
+      <Id>7412af74-03b5-467b-9cd1-ca61087e4139</Id>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/RightSpeedOut%3AINT</SymbolId>
+      <NaturalDataType>INT</NaturalDataType>
+      <Comment></Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>0</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Int16</DataType>
+      <Id>7412af74-03b5-467b-9cd1-ca61087e4139</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
       <ValueOffset></ValueOffset>
@@ -22,18 +60,18 @@
     </DataTraceSetItemModel>
     <DataTraceSetItemModel>
       <ModelType>Symbol</ModelType>
-      <Name>AZD_ActTorque</Name>
-      <Id>609ba281-737e-441c-b187-a133e7aad848</Id>
-      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/AZD_ActTorque%3AINT</SymbolId>
+      <Name>LeftSpeedOut</Name>
+      <Id>e408089e-1e1e-4cb2-9051-da5fb5113ec3</Id>
+      <SymbolId>entity://variables.global.d0eb77d0-1a8d-44b6-8631-d8f463bd0a22/LeftSpeedOut%3AINT</SymbolId>
       <NaturalDataType>INT</NaturalDataType>
       <Comment></Comment>
       <ColourA>255</ColourA>
-      <ColourR>0</ColourR>
-      <ColourG>255</ColourG>
-      <ColourB>255</ColourB>
+      <ColourR>255</ColourR>
+      <ColourG>165</ColourG>
+      <ColourB>0</ColourB>
       <Historical>false</Historical>
       <DataType>System.Int16</DataType>
-      <Id>609ba281-737e-441c-b187-a133e7aad848</Id>
+      <Id>e408089e-1e1e-4cb2-9051-da5fb5113ec3</Id>
       <Visible>true</Visible>
       <Offset>0</Offset>
       <ValueOffset></ValueOffset>

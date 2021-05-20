@@ -17,7 +17,7 @@
 {"CLs":[{"__type":"LD","Var":"BLV_Rev"},{"__type":"LD","Ix":1,"Var":"D2_Rev","Y":1},{"__type":"ST","Ix":2,"S":true,"Var":"EC_BLVR_REV","X":1},{"__type":"ST","Ix":3,"RS":true,"Var":"EC_BLVR_FWD","X":2},{"__type":"ST","Ix":4,"S":true,"Var":"EC_BLVR_STOPMODE","X":3}],"CMT":"Drive 2 Control","LRI":5,"RRI":6,"VLs":[{"Ix":7,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"BLV_Stop"},{"__type":"ST","Ix":1,"RS":true,"Var":"EC_BLVR_FWD","X":1},{"__type":"ST","Ix":2,"RS":true,"Var":"EC_BLVR_REV","X":2}],"LRI":3,"RRI":4,"VLs":[]}
 {"CLs":[{"__type":"LD","Var":"BLV_Crash"},{"__type":"ST","Ix":1,"RS":true,"Var":"EC_BLVR_STOPMODE","X":1}],"LRI":2,"RRI":3,"VLs":[]}
-{"CLs":[{"__type":"LD","Not":true,"Var":"Param.BrakeAtStop"},{"__type":"ST","Ix":1,"Var":"EC_BLVR_MBFREE","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"Param.BrakeAtStop"},{"__type":"LD","Ix":1,"Var":"Break_ReleaseR","Y":1},{"__type":"ST","Ix":2,"Var":"EC_BLVR_MBFREE","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"Conveyor_RTL"},{"__type":"LD","Ix":1,"Var":"Manual_RTL","Y":1},{"__type":"ST","Ix":2,"Var":"Drive3Data.InCmd.Bit[3]","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
 {"CLs":[{"__type":"LD","Var":"Conveyor_LTR"},{"__type":"LD","Ix":1,"Var":"Manual_LTR","Y":1},{"__type":"ST","Ix":2,"Var":"Drive3Data.InCmd.Bit[4]","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
 {"CLs":[{"__type":"ST","Var":"Drive3Data.InCmd.Bit[5]"}],"LRI":1,"RRI":2,"VLs":[]}

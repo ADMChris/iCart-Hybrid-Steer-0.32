@@ -9,6 +9,7 @@ _EN=Variables
 ++D=REAL	N=Spin_Distance	G=VAR
 ++D=REAL	N=State_count	G=VAR
 ++D=REAL	N=Prev_StateCount	G=VAR
+++D=INT	N=Prev_TimeInState	Ord=1	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=TagRequestLS	G=VAR_EXTERNAL
 ++D=BOOL	N=TagRequestRS	G=VAR_EXTERNAL
@@ -63,3 +64,4 @@ _EN=Variables
 ++D=REAL	N=Spin_RightRealSpeed	G=VAR_EXTERNAL
 ++D=REAL	N=Spin_LeftRealSpeed	G=VAR_EXTERNAL
 ++D=BOOL	N=SpinDegSpeed	G=VAR_EXTERNAL
+++D=BOOL	N=ScanWarnLow	Ord=2	G=VAR_EXTERNAL	AOE=1

@@ -458,3 +458,4 @@ _EN=Variables
 ++D=BOOL	N=TagDriveSetL	G=VAR_EXTERNAL	Com=Set Drives to spin left
 ++D=BOOL	N=SS_BLV_Stp	G=VAR_EXTERNAL
 ++D=BOOL	N=SS_BLV_MBFREE	G=VAR_EXTERNAL
+++D=BOOL	N=Break_ReleaseR	Ord=1	G=VAR_EXTERNAL	AOE=1
