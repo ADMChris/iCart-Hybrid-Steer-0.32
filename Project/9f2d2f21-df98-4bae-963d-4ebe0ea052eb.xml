@@ -236,6 +236,7 @@ _EN=Variables
 ++D=BOOL	N=TaglefttPos	G=VAR
 ++D=TON	N=SpinDrveTimer	G=VAR
 ++D=WORD	N=AZD_Drive_Fault	G=VAR
+++D=BOOL	N=ng	Ord=2	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=SR_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=SR1_On	G=VAR_EXTERNAL

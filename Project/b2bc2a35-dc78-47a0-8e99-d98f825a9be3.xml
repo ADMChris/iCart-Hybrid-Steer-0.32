@@ -142,6 +142,7 @@ _EN=Variables
 ++D=REAL	N=motor_center_radius_Squared	Ord=31	G=VAR	AOE=1
 ++D=REAL	N=frontaxelradius_Sq	Ord=32	G=VAR	AOE=1
 ++D=REAL	N=wheel_C	Ord=33	G=VAR	AOE=1
+++D=REAL	N=diff_drive_ratio_In	Ord=34	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
