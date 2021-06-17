@@ -103,8 +103,8 @@ _EN=Variables
 ++D=BOOL	N=UVLO	G=VAR	Com=Undervoltage Lockout
 ++D=BOOL	N=Off	G=VAR
 ++D=BOOL	N=RFI	G=VAR
-++D=INT	N=BatteryThreshold	IV=2280	G=VAR
-++D=INT	N=UVLOThreshold	IV=2200	G=VAR
+++D=INT	N=BatteryThreshold	IV=900	G=VAR
+++D=INT	N=UVLOThreshold	IV=900	G=VAR
 ++D=TON	N=UVLTimerFB	G=VAR
 ++D=Directions	N=PrevDirection	G=VAR
 ++D=TON	N=DirectionChangeTimer	G=VAR
@@ -237,6 +237,8 @@ _EN=Variables
 ++D=TON	N=SpinDrveTimer	G=VAR
 ++D=WORD	N=AZD_Drive_Fault	G=VAR
 ++D=BOOL	N=ng	Ord=2	G=VAR	AOE=1
+++D=BOOL	N=s1	Ord=3	G=VAR	AOE=1	Com=test bit
+++D=DINT	N=HMI_Vel	IV=30000	Ord=5	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=SR_Enable	G=VAR_EXTERNAL
 ++D=BOOL	N=SR1_On	G=VAR_EXTERNAL
@@ -460,3 +462,7 @@ _EN=Variables
 ++D=BOOL	N=SS_BLV_Stp	G=VAR_EXTERNAL
 ++D=BOOL	N=SS_BLV_MBFREE	G=VAR_EXTERNAL
 ++D=BOOL	N=Break_ReleaseR	Ord=1	G=VAR_EXTERNAL	AOE=1
+++D=DINT	N=PrevSetPos	Ord=4	G=VAR_EXTERNAL	AOE=1
+++D=DINT	N=AZD_SetVel	Ord=6	G=VAR_EXTERNAL	AOE=1
+++D=DINT	N=AZD_ActPos	Ord=8	G=VAR_EXTERNAL	AOE=1
+++D=REAL	N=DegAngle	Ord=9	G=VAR_EXTERNAL	AOE=1

@@ -143,6 +143,9 @@ _EN=Variables
 ++D=REAL	N=frontaxelradius_Sq	Ord=32	G=VAR	AOE=1
 ++D=REAL	N=wheel_C	Ord=33	G=VAR	AOE=1
 ++D=REAL	N=diff_drive_ratio_In	Ord=34	G=VAR	AOE=1
+++D=REAL	N=CycleTime_Sec	Ord=36	G=VAR	AOE=1
+++D=REAL	N=Odometer_mm	Ord=37	G=VAR	AOE=1
+++D=ULINT	N=Odometer_m	Ord=38	G=VAR	AOE=1
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=UDINT	N=TargetPosition	G=VAR_EXTERNAL
 ++D=INT	N=SpeedFromInterrupt	G=VAR_EXTERNAL
@@ -218,3 +221,4 @@ _EN=Variables
 ++D=REAL	N=G_CornerInt	Ord=25	G=VAR_EXTERNAL	AOE=1
 ++D=BOOL	N=EC_BLVR_MBFREE	Ord=26	G=VAR_EXTERNAL	AOE=1
 ++D=BOOL	N=Break_ReleaseR	Ord=27	G=VAR_EXTERNAL	AOE=1
+++D=REAL	N=DegAngle	Ord=35	G=VAR_EXTERNAL	AOE=1

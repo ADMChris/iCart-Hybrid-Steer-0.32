@@ -377,9 +377,9 @@ _EN=Variables
 ++D=BOOL	N=AZD_InFault	G=VAR_GLOBAL
 ++D=BOOL	N=SpinStateReset	G=VAR_GLOBAL
 ++D=REAL	N=Tracking_ControlOutput	G=VAR_GLOBAL
-++D=DINT	N=Steering_LeftPos	IV=90000	G=VAR_GLOBAL
-++D=DINT	N=Steering_RightPos	IV=20000	G=VAR_GLOBAL
-++D=dINT	N=Steering_Home	IV=55000	G=VAR_GLOBAL
+++D=DINT	N=Steering_LeftPos	IV=47000	G=VAR_GLOBAL
+++D=DINT	N=Steering_RightPos	IV=-22000	G=VAR_GLOBAL
+++D=dINT	N=Steering_Home	IV=11000	G=VAR_GLOBAL
 ++D=BOOL	N=DriveSpin	G=VAR_GLOBAL
 ++D=BOOL	N=AZD_SW_OE	G=VAR_GLOBAL	Com=Operation Enabled
 ++D=DINT	N=AZD_SetPos	AT=ECAT://node#2/Receive PDO mapping 1_Target position_607A_00	G=VAR_GLOBAL
@@ -416,3 +416,4 @@ _EN=Variables
 ++D=REAL	N=G_CornerInt	G=VAR_GLOBAL	AOE=1
 ++D=BOOL	N=Break_ReleaseR	G=VAR_GLOBAL	AOE=1
 ++D=BOOL	N=Break_ReleaseL	G=VAR_GLOBAL	AOE=1
+++D=REAL	N=DegAngle	G=VAR_GLOBAL	AOE=1

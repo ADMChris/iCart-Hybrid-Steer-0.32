@@ -2,7 +2,7 @@
 <data>
   <OptionBoardSetting>
     <Slot1OptionBoard>
-      <CurrentValue></CurrentValue>
+      <CurrentValue>NX1W-CIF0110</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue></DefaultValue>
@@ -10,7 +10,7 @@
     </Slot1OptionBoard>
     <Slot1SerialMode>
       <CurrentValue>OptionModeUpperLink</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>OptionModeUpperLink</DefaultValue>
       <Options>
@@ -21,7 +21,7 @@
     </Slot1SerialMode>
     <Slot1UnitNo>
       <CurrentValue>0</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>0</DefaultValue>
       <Options />
@@ -34,8 +34,8 @@
       <Options />
     </Slot1UnitNoValue2>
     <Slot1Speed>
-      <CurrentValue>OptionSpeed009600</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <CurrentValue>OptionSpeed115200</CurrentValue>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>OptionSpeed009600</DefaultValue>
       <Options>
@@ -50,8 +50,8 @@
       </Options>
     </Slot1Speed>
     <Slot1DataLength>
-      <CurrentValue>EnumElement1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <CurrentValue>EnumElement2</CurrentValue>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
       <Options>
@@ -61,7 +61,7 @@
     </Slot1DataLength>
     <Slot1Parity>
       <CurrentValue>OptionParityEven</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>OptionParityEven</DefaultValue>
       <Options>
@@ -72,7 +72,7 @@
     </Slot1Parity>
     <Slot1StopBit>
       <CurrentValue>EnumElement2</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement2</DefaultValue>
       <Options>
